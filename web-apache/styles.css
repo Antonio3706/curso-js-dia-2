@@ -20,9 +20,20 @@ body{
 }
 
 .tarjetas{
-
+    display: flex;
+    justify-self: center;
+    column-gap: 500px;
+    align-content: center;
 }
 
 .tarjeta{
-    
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 128, 0.7);
+    padding: 20px;
+}
+
+footer{
+    align-self: center;
+
 }
