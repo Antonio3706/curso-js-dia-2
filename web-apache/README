@@ -1,6 +1,40 @@
 # Curso-JS-Ionic
 
-## Preguntas PODMAN
+## Practica A - Preguntas PODMAN/DOCKER
+
+### ¿Qué ha pasado al ejecutar hello-world? ¿Qué mensajes ha mostrado?
+
+Al ejecutar hello-world se ha cargado un programa que muestra "Hello Podman World", junto con el logo de podaman construido con diferentes letras y símbolos además de los links relacionados con Podman.
+
+### ¿Qué diferencia hay entre una imagen y un contenedor?
+
+Una imagen es un elemento que muestra contenido visual y un contenedor es un elemento que organiza y agrupa contenido dentro de una web.
+
+### ¿Docker ha instalado Apache en tu sistema o lo ha ejecutado de forma aislada?
+
+El sistema ejecuta Docker pero Apache se ejecuta de forma aislada dentro de un contenedor.
+
+### ¿Qué significa -p 8080:80? ¿Por qué tiene dos números?
+
+Ese comando conecta el puerto del ordenador con el del contenedor y los dos números representan dichos puertos.
+
+### ¿Qué pasaría si modificas el index.html mientras el contenedor está corriendo?
+
+El programa cambiaría la visualizacion de la imagen en el contenedor dependiendo de las modificaciones realizadas en index.html. 
+
+
+## Practica B - Preguntas Git y GitHub
+
+### ¿Qué es un repositorio? ¿Para qué sirve?
+
+### ¿Qué es un commit? ¿Por qué son importantes los mensajes de commit?
+
+### ¿Qué diferencia hay entre Git y GitHub?
+
+### ¿Qué hace el comando git push? ¿Y git pull?
+
+
+## Practica D - Preguntas JavaScript ES Modules
 
 ### ¿Para qué sirve export? ¿Qué pasa si no lo pones?
 

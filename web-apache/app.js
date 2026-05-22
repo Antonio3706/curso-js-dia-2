@@ -1,6 +1,10 @@
-import { tecnologias } from './data/tecnologias.js';
-import { crearTarjetaTecnologia } from './utils/dom.js';
-const contenedor = document.querySelector('#contenedor-tecnologias');
-for (const tecnologia of tecnologias) {
-const tarjeta = crearTarjetaTecnologia(tecnologia);
+import { frases } from "./data/frases.js";
+import { elegirAleatorio } from "./utils/random.js";
+const parrafoFrase = document.querySelector("#frase");
+const botonFrase = document.querySelector("#boton-frase");
+function mostrarFrase() {
+    const frase = elegirAleatorio(frases);
+    parrafoFrase.textContent = frase;
 }
+botonFrase.addEventListener("click", mostrarFrase);
+mostrarFrase(); // Mostrar una al cargar la página
