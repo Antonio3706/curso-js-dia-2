@@ -1,0 +1,22 @@
+# Curso-JS-Ionic
+
+## Preguntas PODMAN
+
+### ¿Para qué sirve export? ¿Qué pasa si no lo pones?
+
+export sirve para hacer que variables, funciones o clases de un archivo puedan usarse en otros archivos.
+Si no se pone export, ese código queda privado dentro del archivo y no puede importarse desde fuera.
+
+### ¿Para qué sirve import? ¿Cómo se indica la ruta del archivo?
+
+import sirve para traer y usar código exportado desde otro archivo.
+La ruta del archivo se indica con una dirección relativa o absoluta, usando rutas como la carpeta actual, carpetas internas o subir directorios.
+
+### ¿Por qué usamos type="module" en el HTML?
+
+Se usa type="module" en el HTML para indicarle al navegador que el archivo JavaScript utiliza módulos.
+Esto permite usar import y export y hace que el navegador trate el archivo como un módulo moderno.
+
+### ¿Qué ventaja tiene separar el código en varios archivos en un proyecto real?
+
+Separar el código en varios archivos mejora la organización, el mantenimiento y la reutilización del proyecto.
