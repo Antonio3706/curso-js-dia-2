@@ -27,11 +27,27 @@ El programa cambiaría la visualizacion de la imagen en el contenedor dependiend
 
 ### ¿Qué es un repositorio? ¿Para qué sirve?
 
+Un repositorio es un espacio donde se guarda un proyecto y todo su historial de cambios.
+
+Sirve para organizar archivos, controlar versiones y trabajar en equipo.
+
 ### ¿Qué es un commit? ¿Por qué son importantes los mensajes de commit?
+
+Un commit es un registro de cambios realizados en el proyecto.
+
+Los mensajes de commit son importantes porque explican qué se modificó y ayudan a entender el historial del proyecto.
 
 ### ¿Qué diferencia hay entre Git y GitHub?
 
+Git es una herramienta de control de versiones que funciona en el ordenador.
+
+GitHub es una plataforma online que almacena repositorios Git y facilita compartir proyectos y colaborar con otros.
+
 ### ¿Qué hace el comando git push? ¿Y git pull?
+
+git push envía los cambios del repositorio local al repositorio remoto.
+
+git pull descarga y actualiza los cambios del repositorio remoto al repositorio local.
 
 
 ## Practica D - Preguntas JavaScript ES Modules
