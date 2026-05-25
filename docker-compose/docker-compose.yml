@@ -1,17 +1,43 @@
 version: '3.9'
 
 services:
-  web:
-    image: nginx
-    networks:
-      - mi_red
+  app:
+    build: 
+      context: ./scr
+      dockerfile: ../docker/app/dockerfile
+    container_name: curso_app
+    ports: -"3000:3000"
+    environment:
+      NODE_ENV: development
+      DB_HOST: db
+    volumes:
+      - ./scr:/app
+      - node_modules: /app/node_modules
+    depends_on:
+      - db
 
   db:
-    image: mysql:8
+    image: postgres:16
+    container_name: curso_db
     environment:
-      MYSQL_ROOT_PASSWORD: root
-    networks:
-      - mi_red
+      POSTGRES_UDER: appuser
+      POSTGRES_PASSWORD: apppass
+      POSTGRES_DB: appdb
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer:latest
+    container_name: curso_adminer
+    ports:
+      -"8080:80"
+    depends_on:
+      - db
+
+
+volumes:
+  db_data:
+  node_modules:
 
 networks:
   mi_red:
