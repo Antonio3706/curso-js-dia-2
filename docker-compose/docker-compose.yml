@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  web:
+    image: nginx
+    networks:
+      - mi_red
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - mi_red
+
+networks:
+  mi_red:
