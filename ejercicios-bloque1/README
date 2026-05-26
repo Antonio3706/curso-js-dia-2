@@ -1,0 +1,67 @@
+# Preguntas Bloque-01
+
+# Parte 1
+
+## Preguntas-01
+
+### ¿Para qué sirve export en calculadora.js?
+
+Sirve para que, después de clacular el iva, el resultado de la operación pueda ser usado por otras funciones.
+
+Export envía los datos e import los recibe de la función a la que llama.
+
+### ¿Qué pasaría si quitamos type="module" del script en el HTML?
+
+Da error con export e import ya que deja de ser un módulo.
+
+### ¿Por qué calculadora.js no usa document.querySelector?
+
+Porque se encarga de la lógica matemática y no de manipular el html.
+
+### ¿Cómo harías que el precio base se lea de un <input> del usuario?
+
+Añadiendo un <input> en el HTML y después leer su valor desde main.js usando document.querySelector().
+
+
+## Preguntas-02
+
+### ¿Qué diferencia hay entre una variable con un string y un objeto?
+
+
+
+### ¿Qué significa activo: true en el objeto alumno? ¿Qué tipo de dato es?
+
+
+
+### ¿Por qué la función recibe alumno como parámetro en lugar de usar la variable directamente?
+
+
+
+
+## Preguntas-03
+
+### ¿Por qué separamos los datos (productos.js) de las funciones (utilidadesProductos.js)?
+
+
+
+### ¿Cómo recorrerías el array para mostrar solo los productos disponibles?
+
+
+
+### ¿Qué pasaría si calcularPrecioTotal no tuviera return?
+
+
+
+
+## Preguntas-04
+
+### ¿Qué devolvería celsiusAFahrenheit(0)? ¿Y celsiusAFahrenheit(100)?
+
+
+
+### ¿Por qué usamos parseFloat al leer el valor de un input?
+
+
+
+### ¿Qué es isNaN y para qué sirve?
+
