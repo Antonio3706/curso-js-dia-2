@@ -27,15 +27,15 @@ Añadiendo un <input> en el HTML y después leer su valor desde main.js usando d
 
 ### ¿Qué diferencia hay entre una variable con un string y un objeto?
 
-
+La diferencia principal es que un string guarda texto, mientras que un objeto puede guardar varias propiedades y valores relacionados.
 
 ### ¿Qué significa activo: true en el objeto alumno? ¿Qué tipo de dato es?
 
-
+activo: true es una propiedad del objeto llamada activo cuyo valor es un booleano.
 
 ### ¿Por qué la función recibe alumno como parámetro en lugar de usar la variable directamente?
 
-
+Porque pasar alumno como parámetro hace que la función sea más reutilizable y flexible.
 
 
 ## Preguntas-03
