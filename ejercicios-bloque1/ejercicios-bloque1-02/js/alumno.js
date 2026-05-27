@@ -19,3 +19,5 @@ export function crearTextoAlumno(alumno){
     const frase=(nombre+" tiene "+edad+" y está matriculada en "+curso)
     return frase;
 }
+
+export{alumno};
