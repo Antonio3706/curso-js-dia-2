@@ -11,3 +11,10 @@ const alumno = {
 };
 // Acceder a una propiedad:
 console.log(alumno.nombre); // 'Ana'
+
+export function crearTextoAlumno(alumno){
+    const nombre= alumno.nombre;
+    const edad=alumno.edad;
+    const curso=alumno.curso;
+    const frase=(nombre+" tiene "+edad+" y está matriculada en "+curso)
+}
