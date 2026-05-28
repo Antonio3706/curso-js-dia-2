@@ -5,5 +5,5 @@ import { calcularPrecioTotal, contarProductos, obtenerNombres, crearTextoResumen
     const obt=obtenerNombres(productos);
     const cre=crearTextoResumen(productos);
 
-    const a=document.
+    const a=document.textContent('');
 
