@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f4f8;
+    background-color: skyblue;
     margin: 0;
     padding: 0;
 }
@@ -19,4 +19,7 @@ body {
 }
 section{
     margin: 20px;
+}
+h1{
+    text-align: center;
 }
