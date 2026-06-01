@@ -7,6 +7,15 @@ body {
     max-width: 600px;
     margin: 40px auto;
 }
+.contenedor2{
+    width: 90%;
+    max-width: 900px;
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 40px;
+}
 /*.tarjeta {
     background-color: darksalmon;
     padding: 1px;
@@ -34,7 +43,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     width: 200px;
-    height: 500px;
+    height: 400px;
 
     display: flex;
     justify-content: center;
@@ -42,8 +51,22 @@ body {
     flex-direction: column;
     
     gap: 20px;
+}
+.eleccion{
+    background-color: darksalmon;
 
+    border-radius: 12px ;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    width: 900px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
+    gap: 20px;
 }
 button{
     border-radius: 12px;
