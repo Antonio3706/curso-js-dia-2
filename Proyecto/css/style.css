@@ -40,19 +40,13 @@ body {
     top: 10;
 
     width: 200px;
-    height: 100vh;
+    height: 500px;
 
     display: flex;
     flex-direction: column;
     gap: 10px;
 
     padding: 20px; 
-}
-.boton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 .menu-lateral button{
     border-radius: 12px;
@@ -61,6 +55,10 @@ body {
     font-size: 25px;
     padding: 10px;
     cursor: pointer;
+    margin: 12px;
+
+    display: flex;
+    flex-direction: column;
 }
 h1{
     text-align: center;
