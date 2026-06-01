@@ -1,5 +1,5 @@
 export const silla=[
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: 'Rosentorp', precio: 59, descripcion: 'Esta silla de madera de estilo tradicional con respaldo cruzado le da un encanto clásico a cualquier espacio y resulta ideal para la cocina, el salón o un dormitorio. Diseñada para combinar perfectamente con las mesas ROSENTORP.', categoria: 'Salón'},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
