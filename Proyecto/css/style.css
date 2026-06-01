@@ -1,15 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: skyblue;
-    margin: 0;
-    padding: 0;
 }
 .contenedor {
     width: 90%;
     max-width: 600px;
     margin: 40px auto;
 }
-.tarjeta {
+/*.tarjeta {
     background-color: darksalmon;
     padding: 1px;
     border-radius: 12px ;
@@ -28,10 +26,10 @@ body {
 
     padding: 20px; 
     
-}
+}*/
 .menu-lateral{
     background-color: darksalmon;
-    padding: 1px;
+
     border-radius: 12px ;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -53,12 +51,12 @@ body {
     background-color: seagreen;
     border-width: 0px;
     font-size: 25px;
-    padding: 10px;
     cursor: pointer;
-    margin: 12px;
 
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
+    gap: 25px 7px;
 }
 h1{
     text-align: center;
