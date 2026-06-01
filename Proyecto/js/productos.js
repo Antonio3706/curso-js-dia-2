@@ -1,10 +1,80 @@
-export const productos=[
-    {nombre: 'Silla', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Mesa', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Escritorio', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Armario', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Inodoro', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Encimera', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Estanteria', precio: 0, descripcion: '', categoria: ''},
-    {nombre: 'Perchero', precio: 0, descripcion: '', categoria: ''},
+export const silla=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const mesa=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const escritorio=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const armario=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const inodoro=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const encimera=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const estanteria=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+];
+export const perchero=[
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: '', precio: 0, descripcion: '', categoria: ''},
 ];
