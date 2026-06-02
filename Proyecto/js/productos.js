@@ -9,7 +9,7 @@ export const silla=[
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
 ];
 export const mesa=[
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: 'Sandsberg', precio: 39, descripcion: 'Esta mesa para cuatro combina la calidez de la madera con la resistencia del metal en un diseño esbelto que luce bien incluso en espacios reducidos. Complétala con la silla SANDSBERG si quieres crear un conjunto acogedor y de aspecto homogéneo.', categoria: 'Comedor'},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
@@ -19,7 +19,7 @@ export const mesa=[
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
 ];
 export const escritorio=[
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: 'Micke', precio: 79.99, descripcion: 'Un look de líneas sencillas que queda bien en cualquier parte. Se puede combinar con otros escritorios o módulos de cajones de la serie MICKE para tener más espacio de trabajo. El práctico diseño de la parte posterior permite ocultar los cables.', categoria: 'Estudio'},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
