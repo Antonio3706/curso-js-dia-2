@@ -15,29 +15,29 @@ control1.addEventListener('click', () => {
 });
 
 control2.addEventListener('click', () => {
-    ponerNombreArmario(silla);
+    ponerNombreArmario(armario);
 });
 
 control3.addEventListener('click', () => {
-    ponerNombreEncimera(silla);
+    ponerNombreEncimera(encimera);
 });
 
 control4.addEventListener('click', () => {
-    ponerNombreEscritorio(silla);
+    ponerNombreEscritorio(escritorio);
 });
 
 control5.addEventListener('click', () => {
-    ponerNombre(silla);
+    ponerNombreEstanteria(estanteria);
 });
 
 control6.addEventListener('click', () => {
-    ponerNombre(silla);
+    ponerNombreInodoro(inodoro);
 });
 
 control7.addEventListener('click', () => {
-    ponerNombre(silla);
+    ponerNombreMesa(mesa);
 });
 
 control8.addEventListener('click', () => {
-    ponerNombre(silla);
+    ponerNombrePerchero(perchero);
 });
