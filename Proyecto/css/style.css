@@ -83,6 +83,12 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+.caja{
+    background-color: darksalmon;
+
+    border-radius: 12px ;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 h1{
     text-align: center;
     border-radius: 12px;
