@@ -10,10 +10,11 @@ export function ponerNombre(productos){
 
 export function ventanaPro(productos){
     const botones=document.querySelectorAll(".boton");
-    botones.forEach((boton)=>{
-        boton[i].addEventListener("click",()=>{
-            localStorage.setItem("prodSelec", JSON.stringify(productos[i]))
+    for (let i=0; i<boton.length; i++){
+        botones[i].textContent=productos[i].nombre;
+        botones[i].addEventListener("click",()=>{
+            localStorage.setItem("prodSelec", JSON.stringify(productos[i]));
             window.location.href="descripciones.html";
-        });
-    });
+        });        
+    }
 }
