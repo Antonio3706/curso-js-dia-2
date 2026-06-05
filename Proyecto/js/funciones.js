@@ -9,5 +9,6 @@ export function ponerNombre(productos){
 }
 
 export function ventanaPro(productos){
-
+    localStorage.getItem("productoSeleccionado", JSON.stringify(productos));
+    window.location.href="descripciones.html";
 }
