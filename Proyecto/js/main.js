@@ -41,3 +41,12 @@ control7.addEventListener('click', () => {
 control8.addEventListener('click', () => {
     ponerNombre(perchero);
 });
+
+ventanaPro(silla);
+ventanaPro(mesa);
+ventanaPro(inodoro);
+ventanaPro(encimera);
+ventanaPro(escritorio);
+ventanaPro(estanteria);
+ventanaPro(perchero);
+ventanaPro(armario);
