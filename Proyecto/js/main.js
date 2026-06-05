@@ -1,5 +1,4 @@
 import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero } from "./productos.js";
-//import { ponerNombreSilla, ponerNombreArmario, ponerNombreEncimera, ponerNombreEscritorio, ponerNombreEstanteria, ponerNombreInodoro, ponerNombreMesa, ponerNombrePerchero } from "./funciones.js";  
 import { ponerNombre } from "./funciones.js";
 
 
