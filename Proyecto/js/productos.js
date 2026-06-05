@@ -29,14 +29,14 @@ export const escritorio=[
     {nombre: 'Lisabo', precio: 169, descripcion: 'Estamos muy orgullosos de nuestra serie LISABO, que ha ganado el prestigioso premio internacional Red Dot Award por su diseño. Los productos que incluye son resistentes, duraderos y fáciles de montar, y ofrecen un aspecto ligero y artesanal.', categoria: 'Estudio'},
 ];
 export const armario=[
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: ''},
+    {nombre: 'Kleppstad', precio: 79.99, descripcion: 'Sencillo y práctico. Un armario que ofrece todas las funciones básicas. Y si te falta espacio de almacenaje, puedes añadir otro armario de la serie KLEPPSTAD.', categoria: 'Dormitorio'},
+    {nombre: 'Brimnes', precio: 99.99, descripcion: 'Los espacios reducidos requieren soluciones de almacenaje inteligentes. Este armario tiene una barra para colgar camisas y vestidos, un estante interior para colocar prendas dobladas, como camisetas y jerséis, y espacio para colgar prendas largas.', categoria: 'Dormitorio'},
+    {nombre: 'Metod', precio: 367, descripcion: 'El sistema de cocina METOD te ofrece muchísimas posibilidades para diseñar la cocina de tus sueños. Con los frentes VOXTORP en gris oscuro mate con tiradores integrados, conseguirás un estilo moderno que, a su vez, resulta acogedor y cálido.', categoria: 'Cocina'},
+    {nombre: 'Visthus', precio: 199, descripcion: 'Las patas regulables permiten corregir posibles desniveles en el suelo.', categoria: 'Dormitorio'},
+    {nombre: 'Lastare', precio: 249, descripcion: 'Con la herramienta de planificación LASTARE, es fácil crear una solución personalizada según tus gustos, tu hogar y tus necesidades de almacenaje.', categoria: 'Dormitorio'},
+    {nombre: 'Smästad', precio: 136, descripcion: 'Este armario es pequeño pero engañoso; cabe de todo: desde ropa para bebé hasta vaqueros de adolescente. En las barras para la ropa hay espacio para perchas, en las que tu hijo podrá colgar su ropa por su cuenta.', categoria: 'Dormitorio'},
+    {nombre: 'Smagöra', precio: 139, descripcion: 'Cuando creamos la serie tradicional SMÅGÖRA nos concentramos en la seguridad. Por eso todas las superficies de la cuna, el cambiador y el armario son no tóxicas y los bordes y esquinas están redondeados.', categoria: 'Dormitorio'},
+    {nombre: 'Sundvik', precio: 249, descripcion: 'Estilo atemporal, materiales duraderos y detalles cuidados para este armario con bastante fondo que seguirá a tu hijo desde la niñez hasta la edad adulta.', categoria: 'Dormitorio'},
 ];
 export const inodoro=[
     {nombre: '', precio: 0, descripcion: '', categoria: ''},
