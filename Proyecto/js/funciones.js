@@ -11,7 +11,8 @@ export function ponerNombre(productos){
 export function ventanaPro(productos){
     const botones=document.querySelectorAll(".boton");
     botones.forEach((boton)=>{
-        boton.addEventListener("click",()=>{
+        boton[i].addEventListener("click",()=>{
+            localStorage.setItem("prodSelec", JSON.stringify(productos[i]))
             window.location.href="descripciones.html";
         });
     });
