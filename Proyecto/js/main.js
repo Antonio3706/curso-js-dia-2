@@ -2,49 +2,44 @@ import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perche
 //import { ponerNombreSilla, ponerNombreArmario, ponerNombreEncimera, ponerNombreEscritorio, ponerNombreEstanteria, ponerNombreInodoro, ponerNombreMesa, ponerNombrePerchero } from "./funciones.js";  
 import { ponerNombre } from "./funciones.js";
 
-const botonesMenu=document.querySelectorAll(".menu-lateral button");
-botonesMenu.forEach(boton =>{
-    boton.addEventListener("click",()=>{
-        ponerNombre(boton.id);
-    });
-});
-/*const control1=document.getElementById("btnSilla");
-const control2=document.getElementById("btnArmario");
-const control3=document.getElementById("btnEncimera");
-const control4=document.getElementById("btnEscritorio");
-const control5=document.getElementById("btnEstanteria");
-const control6=document.getElementById("btnInodoro");
-const control7=document.getElementById("btnMesa");
-const control8=document.getElementById("btnPerchero");
+
+const control1=document.getElementById("silla");
+const control2=document.getElementById("armario");
+const control3=document.getElementById("encimera");
+const control4=document.getElementById("escritorio");
+const control5=document.getElementById("estanteria");
+const control6=document.getElementById("inodoro");
+const control7=document.getElementById("mesa");
+const control8=document.getElementById("perchero");
 
 control1.addEventListener('click', () => {
-    ponerNombreSilla(silla);
+    ponerNombre(silla);
 });
 
 control2.addEventListener('click', () => {
-    ponerNombreArmario(armario);
+    ponerNombre(armario);
 });
 
 control3.addEventListener('click', () => {
-    ponerNombreEncimera(encimera);
+    ponerNombre(encimera);
 });
 
 control4.addEventListener('click', () => {
-    ponerNombreEscritorio(escritorio);
+    ponerNombre(escritorio);
 });
 
 control5.addEventListener('click', () => {
-    ponerNombreEstanteria(estanteria);
+    ponerNombre(estanteria);
 });
 
 control6.addEventListener('click', () => {
-    ponerNombreInodoro(inodoro);
+    ponerNombre(inodoro);
 });
 
 control7.addEventListener('click', () => {
-    ponerNombreMesa(mesa);
+    ponerNombre(mesa);
 });
 
 control8.addEventListener('click', () => {
-    ponerNombrePerchero(perchero);
-});*/
+    ponerNombre(perchero);
+});
