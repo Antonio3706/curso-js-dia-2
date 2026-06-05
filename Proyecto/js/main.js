@@ -2,7 +2,12 @@ import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perche
 //import { ponerNombreSilla, ponerNombreArmario, ponerNombreEncimera, ponerNombreEscritorio, ponerNombreEstanteria, ponerNombreInodoro, ponerNombreMesa, ponerNombrePerchero } from "./funciones.js";  
 import { ponerNombre } from "./funciones.js";
 
-ponerNombre(mesa);
+const botonesMenu=document.querySelectorAll(".menu-lateral button");
+botonesMenu.forEach(boton =>{
+    boton.addEventListener("click",()=>{
+        ponerNombre(boton.id);
+    });
+});
 /*const control1=document.getElementById("btnSilla");
 const control2=document.getElementById("btnArmario");
 const control3=document.getElementById("btnEncimera");
