@@ -1,7 +1,9 @@
 import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero } from "./productos.js";
-import { ponerNombreSilla, ponerNombreArmario, ponerNombreEncimera, ponerNombreEscritorio, ponerNombreEstanteria, ponerNombreInodoro, ponerNombreMesa, ponerNombrePerchero } from "./funciones.js";  
-    
-const control1=document.getElementById("btnSilla");
+//import { ponerNombreSilla, ponerNombreArmario, ponerNombreEncimera, ponerNombreEscritorio, ponerNombreEstanteria, ponerNombreInodoro, ponerNombreMesa, ponerNombrePerchero } from "./funciones.js";  
+import { ponerNombre } from "./funciones.js";
+
+ponerNombre(mesa);
+/*const control1=document.getElementById("btnSilla");
 const control2=document.getElementById("btnArmario");
 const control3=document.getElementById("btnEncimera");
 const control4=document.getElementById("btnEscritorio");
@@ -40,4 +42,4 @@ control7.addEventListener('click', () => {
 
 control8.addEventListener('click', () => {
     ponerNombrePerchero(perchero);
-});
+});*/
