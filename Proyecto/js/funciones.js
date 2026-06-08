@@ -1,6 +1,6 @@
 import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero} from "./productos.js";
 
-export function ponerNombre(productos){
+function ponerNombre(productos){
     const boton = document.querySelectorAll(".boton");
         
     for (let i=0; i<boton.length; i++){
@@ -8,7 +8,7 @@ export function ponerNombre(productos){
     }
 }
 
-export function ventanaPro(productos){
+function ventanaPro(productos){
     const botones=document.querySelectorAll(".boton");
     for (let i=0; i<botones.length; i++){
         botones[i].textContent=productos[i].nombre;
@@ -18,6 +18,11 @@ export function ventanaPro(productos){
             window.location.href="descripciones.html";
         });
     }
+}
+
+export function cargarProducto(productos){
+    ponerNombre(productos);
+    ventanaPro(productos);
 }
 
 export function ponerInformacion(){
