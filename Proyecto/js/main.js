@@ -67,4 +67,6 @@ ventanaPro(estanteria);
 ventanaPro(perchero);
 ventanaPro(armario);
 
-ponerInformacion();
+window.addEventListener("DOMContentLoaded", () =>{
+    ponerInformacion();
+});
