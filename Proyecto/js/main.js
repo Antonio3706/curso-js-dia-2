@@ -17,39 +17,39 @@ if(document.getElementById("silla")){
 }
 
 if(document.getElementById("armario")){
-control2.addEventListener('click', () => {
-    ponerNombre(armario);
-});
+    control2.addEventListener('click', () => {
+        ponerNombre(armario);
+    });
 }
 
 if(document.getElementById("encimera")){
-control3.addEventListener('click', () => {
-    ponerNombre(encimera);
-});
+    control3.addEventListener('click', () => {
+        ponerNombre(encimera);
+    });
 }
 
 if(document.getElementById("escritorio")){
-control4.addEventListener('click', () => {
-    ponerNombre(escritorio);
-});
+    control4.addEventListener('click', () => {
+        ponerNombre(escritorio);
+    });
 }
 
 if(document.getElementById("estanteria")){
-control5.addEventListener('click', () => {
-    ponerNombre(estanteria);
-});
+    control5.addEventListener('click', () => {
+        ponerNombre(estanteria);
+    });
 }
 
 if(document.getElementById("inodoro")){
-control6.addEventListener('click', () => {
-    ponerNombre(inodoro);
-});
+    control6.addEventListener('click', () => {
+        ponerNombre(inodoro);
+    });
 }
 
 if(document.getElementById("mesa")){
-control7.addEventListener('click', () => {
-    ponerNombre(mesa);
-});
+    control7.addEventListener('click', () => {
+        ponerNombre(mesa);
+    });
 }
 
 if(document.getElementById("perchero")){
