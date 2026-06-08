@@ -51,11 +51,4 @@ ventanaPro(estanteria);
 ventanaPro(perchero);
 ventanaPro(armario);
 
-ponerInformacion(silla);
-ponerInformacion(mesa);
-ponerInformacion(inodoro);
-ponerInformacion(encimera);
-ponerInformacion(escritorio);
-ponerInformacion(estanteria);
-ponerInformacion(perchero);
-ponerInformacion(armario);
+ponerInformacion();
