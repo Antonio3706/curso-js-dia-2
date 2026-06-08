@@ -20,5 +20,14 @@ export function ventanaPro(productos){
 }
 
 export function ponerInformacion(){
+    const producto=JSON.parse(
+        localStorage.getItem("prodSelec")
+    );
+    if(!producto) return;
+
+    document.getElementById("").textContent=producto.nombre;
+    document.getElementById("").textContent=producto.precio + " €";
+    document.getElementById("").textContent=producto.descripcion;
+    document.getElementById("").textContent=producto.categoria;
 
 }
