@@ -10,37 +10,53 @@ const control6=document.getElementById("inodoro");
 const control7=document.getElementById("mesa");
 const control8=document.getElementById("perchero");
 
-control1.addEventListener('click', () => {
-    ponerNombre(silla);
-});
+if(document.getElementById("silla")){
+    control1.addEventListener('click', () => {
+        ponerNombre(silla);
+    });
+}
 
+if(document.getElementById("armario")){
 control2.addEventListener('click', () => {
     ponerNombre(armario);
 });
+}
 
+if(document.getElementById("encimera")){
 control3.addEventListener('click', () => {
     ponerNombre(encimera);
 });
+}
 
+if(document.getElementById("escritorio")){
 control4.addEventListener('click', () => {
     ponerNombre(escritorio);
 });
+}
 
+if(document.getElementById("estanteria")){
 control5.addEventListener('click', () => {
     ponerNombre(estanteria);
 });
+}
 
+if(document.getElementById("inodoro")){
 control6.addEventListener('click', () => {
     ponerNombre(inodoro);
 });
+}
 
+if(document.getElementById("mesa")){
 control7.addEventListener('click', () => {
     ponerNombre(mesa);
 });
+}
 
-control8.addEventListener('click', () => {
-    ponerNombre(perchero);
-});
+if(document.getElementById("perchero")){
+    control8.addEventListener('click', () => {
+        ponerNombre(perchero);
+    });
+}
 
 ventanaPro(silla);
 ventanaPro(mesa);
