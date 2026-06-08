@@ -19,7 +19,7 @@ export function ventanaPro(productos){
             localStorage.setItem("prodSelec", JSON.stringify(productos[i]));
             window.location.href="descripciones.html";
         });
-        document.getElementById("titulo").textContent=producto.nombre;        
+        document.getElementById("nombrePro").textContent=producto.nombre;        
     }
 }
 
