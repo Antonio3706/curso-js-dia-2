@@ -25,9 +25,9 @@ export function ponerInformacion(){
     );
     if(!producto) return;
 
-    document.getElementById("").textContent=producto.nombre;
-    document.getElementById("").textContent=producto.precio + " €";
-    document.getElementById("").textContent=producto.descripcion;
-    document.getElementById("").textContent=producto.categoria;
+    document.getElementById("nombrePro").textContent=producto.nombre;
+    document.getElementById("precio").textContent=producto.precio + " €";
+    document.getElementById("descripcion").textContent=producto.descripcion;
+    document.getElementById("categoria").textContent=producto.categoria;
 
 }
