@@ -18,3 +18,7 @@ export function ventanaPro(productos){
         });        
     }
 }
+
+export function ponerInformacion(){
+    
+}
