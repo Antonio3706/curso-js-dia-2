@@ -101,3 +101,9 @@ h1{
     border-radius: 12px;
     background-color: lightgreen;
 }
+#imagen{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
