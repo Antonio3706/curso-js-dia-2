@@ -40,5 +40,5 @@ export function ponerInformacion(){
     document.getElementById("precio").textContent=producto.precio + " €";
     document.getElementById("descripcion").textContent=producto.descripcion;
     document.getElementById("categoria").textContent=producto.categoria;
-
+    document.getElementById("imagen").src=producto.imagen;
 }
