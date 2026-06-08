@@ -28,7 +28,7 @@ export function ponerInformacion(){
     );
     if(!producto) return;
 
-    console.log(producto);
+    console.log(document.getElementById("nombrePro"));
 
     document.getElementById("nombrePro").textContent=producto.nombre;
     document.getElementById("precio").textContent=producto.precio + " €";
