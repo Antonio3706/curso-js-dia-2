@@ -3,7 +3,7 @@
 
 import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero} from "./productos.js";
     
-    const botones=document.querySelectorAll(".boton");
+/*    const botones=document.querySelectorAll(".boton");
     for (let i=0; i<botones.length; i++){
         botones[i].textContent=productos[i].nombre;
         botones[i].addEventListener("click",()=>{
@@ -19,4 +19,8 @@ console.log(localStorage.getItem("prodSelec"));
         localStorage.getItem("prodSelec")
     );
     console.log(producto);
-}
+}*/
+
+const control1 = document.getElementById("silla");
+
+console.log(control1);
