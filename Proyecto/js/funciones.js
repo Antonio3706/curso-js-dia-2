@@ -13,6 +13,7 @@ export function ventanaPro(productos){
     for (let i=0; i<botones.length; i++){
         botones[i].textContent=productos[i].nombre;
         botones[i].addEventListener("click",()=>{
+            console.log(productos[i]);
             localStorage.setItem("prodSelec", JSON.stringify(productos[i]));
             window.location.href="descripciones.html";
         });
