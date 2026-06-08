@@ -1,5 +1,5 @@
 import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero } from "./productos.js";
-import { ponerNombre, ventanaPro } from "./funciones.js";
+import { ponerNombre, ventanaPro, ponerInformacion } from "./funciones.js";
 
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
@@ -50,3 +50,12 @@ ventanaPro(escritorio);
 ventanaPro(estanteria);
 ventanaPro(perchero);
 ventanaPro(armario);
+
+ponerInformacion(silla);
+ponerInformacion(mesa);
+ponerInformacion(inodoro);
+ponerInformacion(encimera);
+ponerInformacion(escritorio);
+ponerInformacion(estanteria);
+ponerInformacion(perchero);
+ponerInformacion(armario);
