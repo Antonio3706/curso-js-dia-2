@@ -20,10 +20,15 @@ export function ventanaPro(productos){
 }
 
 export function ponerInformacion(){
+
+    console.log(localStorage.getItem("prodSelec"));
+
     const producto=JSON.parse(
         localStorage.getItem("prodSelec")
     );
     if(!producto) return;
+
+    console.log(producto);
 
     document.getElementById("nombrePro").textContent=producto.nombre;
     document.getElementById("precio").textContent=producto.precio + " €";
