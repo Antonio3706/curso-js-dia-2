@@ -42,11 +42,11 @@ export const inodoro=[
     {nombre: 'Valloxen', precio: 19.99, descripcion: 'Las bisagras con tope integrado paran el asiento del váter y lo cierran de manera suave, lenta y silenciosa.', categoria: 'Baño', imagen: ''},
     {nombre: 'Kullarna', precio: 39.99, descripcion: 'Cambiar el asiento del inodoro es la manera perfecta de renovar el baño sin tener que comprar uno nuevo. Este se cierra de manera suave y lenta para que nada perturbe el ambiente apacible.', categoria: 'Baño', imagen: ''},
     {nombre: 'Tossig', precio: 5.99, descripcion: 'Este asiento facilita a tu hijo el proceso de aprender a ir al baño. Con su forma y sus bordes redondeados, es ideal para culitos pequeños y resulta muy fácil de quitar y limpiar. Cuando no lo uses, puedes colgarlo de la pared o ponerlo a un lado.', categoria: 'Baño', imagen: ''},
-    {nombre: 'Ona', precio: 1929.95, descripcion: 'In-Wash® Ona - Smart toilet compacto adosado a pared Roca Rimless® con funciones de lavado y secado', categoria: 'Baño', imagen: ''},
+    {nombre: 'Ona', precio: 1929.95, descripcion: 'In-Wash® Ona - Smart toilet compacto adosado a pared Roca Rimless® con funciones de lavado y secado', categoria: 'Baño', imagen: 'https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject=4753d2bb85535eb4e09e9ad4f48e35ca&trName=TF_Mob_prod_xxl_v2'},
     {nombre: 'Avant', precio: 833.69, descripcion: 'E- Inodoro suspendido con cisterna integrada In-Tank®. Necesita toma eléctrica.', categoria: 'Baño', imagen: 'https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject=bb70c903657e5f594c9bee314ce96435&trName=TF_Mob_prod_xxl_v2'},
-    {nombre: '', precio: 0, descripcion: '', categoria: 'Baño', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: 'Baño', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: 'Baño', imagen: ''},
+    {nombre: 'Tura', precio: 533.61, descripcion: 'Inodoro completo Roca Rimless® adosado a pared con salida dual (incluye taza y tapa amortiguada)', categoria: 'Baño', imagen: 'https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject=f305a5ebea42512b76b3b770152ec8a9&trName=TF_Mob_prod_xxl_v2'},
+    {nombre: 'The Gap', precio: 405.35, descripcion: 'Square - Inodoro suspendido con salida horizontal y fijaciones ocultas (incluye taza Roca Rimless® y tapa amortiguada de Supralit®', categoria: 'Baño', imagen: 'https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject=%7BE0E8D0C9-2065-4989-80A4-48212B0B116C%7D&trName=TF_Mob_prod_xxl_v2'},
+    {nombre: 'Avant', precio: 833.69, descripcion: 'E- Inodoro suspendido con cisterna integrada In-Tank®. Necesita toma eléctrica.', categoria: 'Baño', imagen: 'https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject=bb70c903657e5f594c9bee314ce96435&trName=TF_Mob_prod_xxl_v2'},
 ];
 export const encimera=[
     {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
