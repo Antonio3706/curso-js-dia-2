@@ -37,8 +37,8 @@ export function ponerInformacion(){
     console.log(document.getElementById("nombrePro"));
 
     document.getElementById("nombrePro").textContent=producto.nombre;
-    document.getElementById("precio").textContent=producto.precio + " €";
+    document.getElementById("precio").textContent="Precio: " + producto.precio + " €";
     document.getElementById("descripcion").textContent=producto.descripcion;
-    document.getElementById("categoria").textContent=producto.categoria;
+    document.getElementById("categoria").textContent="Categoria: " + producto.categoria;
     document.getElementById("imagen").src=producto.imagen;
 }
