@@ -119,12 +119,14 @@ h1{
     border-width: 0px;
     background-color: darkgray;
     cursor: pointer;
+    width: 5%;
 }
 
 .barra-busqueda input{
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     border-width: 0px;
+    width: 95%;
 }
 
 #imagen{
