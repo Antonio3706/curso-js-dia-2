@@ -49,14 +49,14 @@ export const inodoro=[
     {nombre: 'Avant', precio: 833.69, descripcion: 'E- Inodoro suspendido con cisterna integrada In-Tank®. Necesita toma eléctrica.', categoria: 'Baño', imagen: 'https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject=bb70c903657e5f594c9bee314ce96435&trName=TF_Mob_prod_xxl_v2'},
 ];
 export const encimera=[
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
+    {nombre: 'Ekbacken', precio: 59, descripcion: 'Las encimeras laminadas son duraderas y asequibles. Las salpicaduras y la grasa se limpian fácilmente y la encimera se conserva como nueva pese al paso del tiempo. EKBACKEN está disponible en muchos colores y estilos, con un grosor de 2,8 cm.', categoria: 'Cocina', imagen: 'https://www.ikea.com/es/es/images/products/ekbacken-encimera-laminado-ef-fresno-laminado__0865364_pe623323_s5.jpg?f=xs'},
+    {nombre: 'Järstorp', precio: 69, descripcion: 'Las encimeras laminadas son duraderas y asequibles. Las salpicaduras y la grasa se limpian fácilmente y la encimera se conserva como nueva pese al paso del tiempo. JÄRSTORP tiene un grosor de 2,8 cm.', categoria: 'Cocina', imagen: 'https://www.ikea.com/es/es/images/products/jarstorp-encimera-blanco-laminado__1330831_pe945779_s5.jpg?f=xs'},
+    {nombre: 'Säljan', precio: 89, descripcion: 'Las encimeras laminadas son duraderas y asequibles. Se limpian fácilmente y la encimera se conserva como nueva pese al paso del tiempo. SÄLJAN tiene un grosor de 3,8 cm.', categoria: 'Cocina', imagen: 'https://www.ikea.com/es/es/images/products/saljan-encimera-blanco-gris-claro-efecto-piedra-laminado__1170718_pe892914_s5.jpg?f=xs'},
+    {nombre: 'Holmared', precio: 179, descripcion: 'Esta encimera de chapa gruesa de bambú puede resistir el uso diario en la cocina. La madera con variaciones únicas en la veta aporta un toque cálido y vibrante.', categoria: 'Cocina', imagen: 'https://www.ikea.com/es/es/images/products/holmared-encimera-bambu-chapa__1237182_pe917832_s5.jpg?f=xs'},
+    {nombre: 'Tolken', precio: 70, descripcion: 'Las encimeras laminadas TOLKEN aportan un toque acogedor. Son fáciles de mantener y conservan su belleza durante muchos años, una solución ideal para baños concurridos.', categoria: 'Baño', imagen: 'https://www.ikea.com/es/es/images/products/tolken-encimera-marron-efecto-nogal-tablero-laminado__1195592_pe902515_s5.jpg?f=xs'},
+    {nombre: 'Ålsken', precio: 80, descripcion: 'Las encimeras ÅLSKEN están hechas con una gruesa chapa de madera, cada una con variaciones únicas en la veta. Cuentan con una belleza natural y una robusta estructura que resiste las salpicaduras y el uso diario.', categoria: 'Baño', imagen: 'https://www.ikea.com/es/es/images/products/alsken-encimera-bambu-chapa__1195607_pe902530_s5.jpg?f=xs'},
+    {nombre: 'Hemträsk', precio: 69, descripcion: 'La serie ENHET te ayuda a crear una nueva solución para el baño. Esta encimera te irá muy bien si quieres crear una solución para el lavadero y para el baño con espacio para clasificar y doblar la ropa.', categoria: 'Baño', imagen: 'https://www.ikea.com/es/es/images/products/hemtrask-encimera-blanco-laminado__0866674_pe604868_s5.jpg?f=xs'},
+    {nombre: 'Karlby', precio: 199, descripcion: 'Las encimeras de chapa gruesa le dan un estilo cálido y natural a la cocina. Al estar hechas de tablero de partículas con la capa superior de chapa, usan menos materias primas al tiempo que ofrecen durabilidad.', categoria: 'Cocina', imagen: 'https://www.ikea.com/es/es/images/products/karlby-encimera-nogal-chapa__0866708_pe594749_s5.jpg?f=xs'},
 ];
 export const estanteria=[
     {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
