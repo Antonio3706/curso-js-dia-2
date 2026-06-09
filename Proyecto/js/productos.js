@@ -59,14 +59,14 @@ export const encimera=[
     {nombre: 'Karlby', precio: 199, descripcion: 'Las encimeras de chapa gruesa le dan un estilo cálido y natural a la cocina. Al estar hechas de tablero de partículas con la capa superior de chapa, usan menos materias primas al tiempo que ofrecen durabilidad.', categoria: 'Cocina', imagen: 'https://www.ikea.com/es/es/images/products/karlby-encimera-nogal-chapa__0866708_pe594749_s5.jpg?f=xs'},
 ];
 export const estanteria=[
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
+    {nombre: 'Kallax', precio: 59.99, descripcion: 'En horizontal o en vertical, la serie KALLAX se adapta a tu gusto, espacio y presupuesto. Personaliza la estantería con accesorios y cajas según tus necesidades.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/kallax-estanteria-negro-marron__0644754_pe702938_s5.jpg?f=xs'},
+    {nombre: 'Lack', precio: 89.99, descripcion: 'Este estante es perfecto para aprovechar un espacio pequeño o una pared sin aprovechar. Puedes montarlo en vertical o en horizontal en función del espacio y las necesidades.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/lack-estanteria-pared-efecto-roble-tinte-blanco__0670332_pe715459_s5.jpg?f=xs'},
+    {nombre: 'Billy', precio: 79.99, descripcion: 'Ten en cuenta que debes dejar suficiente espacio entre la parte de arriba del mueble y el techo para poder fijar el producto a la pared.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/billy-estanteria-con-altillo-efecto-roble__1269127_pe929014_s5.jpg?f=xl'},
+    {nombre: 'Eket', precio: 170, descripcion: 'Crea una solución de almacenaje asimétrica u original y llénala con tus cosas. Apila y combina elementos a tu gusto. Se adapta a todos los espacios y ofrece un sinfín de posibilidades.', categoria: 'Salon', imagen: 'https://www.ikea.com/es/es/images/products/eket-mueble-almacenaje-con-riel-efecto-nogal-blanco__1161437_pe889387_s5.jpg?f=xs'},
+    {nombre: 'Gnedby', precio: 39, descripcion: 'GNEDBY es el sueño de todo coleccionista: una estantería fina y poco profunda con espacio para muchas cosas. Es ideal para CD, DVD u otros objetos pequeños.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/gnedby-estanteria-blanco__0644265_pe702542_s5.jpg?f=xs'},
+    {nombre: 'Baggebo', precio: 27.99, descripcion: 'La serie BAGGEBO es tan bonita como práctica, sobre todo si la llenas con tus cosas. Esta librería es perfecta tanto para carpetas como para tus libros favoritos. Dale un toque divertido y personal añadiendo cajas de almacenaje.', categoria: 'Salon', imagen: 'https://www.ikea.com/es/es/images/products/baggebo-libreria-blanco__1094764_pe863605_s5.jpg?f=xs'},
+    {nombre: 'Brimnes', precio: 99.99, descripcion: 'Oculta el desorden detrás de las puertas y pon encima las cosas que más te gustan. Los estantes ajustables te permiten personalizar la solución. La serie BRIMNES ofrece un estilo único que cubre la mayoría de las necesidades de almacenaje.', categoria: 'Salon', imagen: 'https://www.ikea.com/es/es/images/products/brimnes-libreria-blanco__0644268_pe702543_s5.jpg?f=xs'},
+    {nombre: 'Skruvby', precio: 79.99, descripcion: 'La serie SKRUVBY tiene un diseño tradicional con módulos de almacenaje independientes que se pueden combinar. Esta librería aporta un toque natural y acogedor a la estancia, y es ideal para colocar libros o adornos.', categoria: 'Salon', imagen: 'https://www.ikea.com/es/es/images/products/skruvby-libreria-blanco__1128166_pe876444_s5.jpg?f=xs'},
 ];
 export const perchero=[
     {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
