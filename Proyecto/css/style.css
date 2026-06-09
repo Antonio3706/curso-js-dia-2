@@ -106,6 +106,26 @@ h1{
     border-radius: 12px;
     background-color: lightgreen;
 }
+
+.barra-busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.barra-busqueda button{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-width: 0px;
+    background-color: darkgray;
+}
+
+.barra-busqueda input{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-width: 0px;
+}
+
 #imagen{
     display: block;
     margin: 0 auto;
