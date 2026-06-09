@@ -69,12 +69,12 @@ export const estanteria=[
     {nombre: 'Skruvby', precio: 79.99, descripcion: 'La serie SKRUVBY tiene un diseño tradicional con módulos de almacenaje independientes que se pueden combinar. Esta librería aporta un toque natural y acogedor a la estancia, y es ideal para colocar libros o adornos.', categoria: 'Salon', imagen: 'https://www.ikea.com/es/es/images/products/skruvby-libreria-blanco__1128166_pe876444_s5.jpg?f=xs'},
 ];
 export const perchero=[
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
-    {nombre: '', precio: 0, descripcion: '', categoria: '', imagen: ''},
+    {nombre: 'Rigga', precio: 19.99, descripcion: 'Como la barra de la ropa se puede fijar en 6 posiciones diferentes, podrás regular la altura según tus necesidades.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/rigga-burro-ropa-blanco__0910155_pe558617_s5.jpg?f=xs'},
+    {nombre: 'Mulig', precio: 9.99, descripcion: 'Con esta barra y unas cuantas perchas, podrás tener tus camisas, blusas y pantalones colgados en perfecto orden en el armario.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/mulig-burro-ropa-blanco__0388390_pe558491_s5.jpg?f=xs'},
+    {nombre: 'Turbo', precio: 49.99, descripcion: 'Adecuado para instalar tanto en interiores como en exteriores.', categoria: 'Jardin', imagen: 'https://www.ikea.com/es/es/images/products/turbo-perchero-interior-exterior-negro__0710718_pe727739_s5.jpg?f=xs'},
+    {nombre: 'GRÅFJÄLLET', precio: 49.99, descripcion: 'La serie GRÅFJÄLLET combina el estilo industrial con líneas depuradas y llamativas que consiguen un aspecto atemporal. Usa este perchero para tener a la vista y a mano tus prendas y zapatos favoritos.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/grafjallet-perchero-con-zapatero-antracita__1380909_ph200895_s5.jpg?f=xs'},
+    {nombre: 'Mackapär', precio: 69.99, descripcion: 'La serie de muebles de recibidor MACKAPÄR te pone las cosas fáciles a la hora de salir de casa. ¿Tienes poco espacio? No pasa nada. Estas soluciones prácticas y duraderas para el recibidor aprovechan al máximo cada centímetro.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/mackapar-perchero-con-zapatero-blanco__1094766_pe863608_s5.jpg?f=xs'},
+    {nombre: 'NIPÅSEN', precio: 69.99, descripcion: 'El encanto de antaño para los recibidores actuales. Aquí tienes espacio para hasta 8 pares de zapatos, ganchos para chaquetas y llaves, un banco perfecto y ninguna excusa para no poner tus cosas donde tienen que ir.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/nipasen-perchero-banco-con-zapatero-negro__1390535_pe965439_s5.jpg?f=xs'},
+    {nombre: 'Älganäs', precio: 29.99, descripcion: 'Una solución de almacenaje inteligente que te alegrará la vida. Este original perchero con zapatero tiene espacio para lo que quieras, desde chaquetas y llaves hasta zapatillas. Además, se fija a la pared y cabe en un espacio diminuto.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/alganas-perchero-con-zapatero-negro__1424874_pe979379_s5.jpg?f=xs'},
+    {nombre: 'Ekrar', precio: 29.99, descripcion: 'El producto se puede reciclar o destinar a recuperación energética (si está disponible en tu zona).', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/ekrar-perchero-blanco__0598722_pe677789_s5.jpg?f=xs'},
 ];
