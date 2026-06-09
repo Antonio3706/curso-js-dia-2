@@ -118,6 +118,7 @@ h1{
     border-bottom-left-radius: 12px;
     border-width: 0px;
     background-color: darkgray;
+    cursor: pointer;
 }
 
 .barra-busqueda input{
