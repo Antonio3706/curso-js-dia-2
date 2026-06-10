@@ -129,7 +129,13 @@ h1{
     cursor: pointer;
     width: 5%;
 }
-
+#submenu{
+    display: none;
+    flex-direction: column;
+}
+#submenu.mostrar{
+    display: flex;
+}
 .barra-busqueda input{
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
