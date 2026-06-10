@@ -38,7 +38,7 @@ body {
     
 }*/
 .menu-lateral{
-    background-color: darksalmon;
+    background-color: var(--dark-salmon);
 
     border-radius: 12px ;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@ body {
     gap: 20px;
 }
 .eleccion{
-    background-color: darksalmon;
+    background-color: var(--dark-salmon);
 
     border-radius: 12px ;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -72,20 +72,27 @@ body {
 }
 .eleccion button{
     border-radius: 12px;
-    background-color: seagreen;
+    background-color: var(--green);
     border-width: 0px;
     font-size: 20px;
     cursor: pointer;
 }
-.menu-lateral button{
+.menu-lateral button, .menu-lateral button input:hover{
     border-radius: 12px;
-    background-color: seagreen;
+    background-color: var(--green);
     border-width: 0px;
     font-size: 20px;
     cursor: pointer;
 }
+/*.menu-lateral button, .menu-lateral button input:active{
+    border-radius: 12px;
+    background-color: var(--light-green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}*/
 .caja{
-    background-color: darksalmon;
+    background-color: var(--dark-salmon);
 
     border-radius: 12px ;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -105,7 +112,7 @@ body {
 h1{
     text-align: center;
     border-radius: 12px;
-    background-color: lightgreen;
+    background-color: #90ee90;
 }
 
 .barra-busqueda{
