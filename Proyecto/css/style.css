@@ -121,7 +121,7 @@ h1{
     justify-content: center;
 }
 
-.barra-busqueda button{
+#despliegue-opciones-busqueda{
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     border-width: 0px;
