@@ -131,10 +131,10 @@ h1{
 }
 #submenu{
     display: none;
-    flex-direction: column;
 }
 #submenu.mostrar{
     display: flex;
+    flex-direction: column;
 }
 .barra-busqueda input{
     border-top-right-radius: 12px;
