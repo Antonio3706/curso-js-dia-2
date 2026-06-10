@@ -154,3 +154,7 @@ h1{
     width: 400px;
     height: 400px;
 }
+#pie{
+    text-align: center;
+    bottom: 100%;
+}
