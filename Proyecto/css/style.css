@@ -77,20 +77,20 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
-.menu-lateral button, .menu-lateral button input:hover{
+.menu-lateral button, .menu-lateral button:hover{
+    border-radius: 12px;
+    background-color: var(--light-green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-lateral button, .menu-lateral button:active{
     border-radius: 12px;
     background-color: var(--green);
     border-width: 0px;
     font-size: 20px;
     cursor: pointer;
 }
-/*.menu-lateral button, .menu-lateral button input:active{
-    border-radius: 12px;
-    background-color: var(--light-green);
-    border-width: 0px;
-    font-size: 20px;
-    cursor: pointer;
-}*/
 .caja{
     background-color: var(--dark-salmon);
 
@@ -118,6 +118,7 @@ h1{
 .barra-busqueda{
     display: flex;
     flex-direction: row;
+    position: relative;
     justify-content: center;
 }
 
@@ -131,6 +132,9 @@ h1{
 }
 #submenu{
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 #submenu.mostrar{
     display: flex;
