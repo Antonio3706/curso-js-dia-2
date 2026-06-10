@@ -70,13 +70,14 @@ body {
     
     gap: 20px;
 }
-.button{
+.eleccion button{
     border-radius: 12px;
     background-color: var(--green);
     border-width: 0px;
     font-size: 20px;
     cursor: pointer;
 }
+
 .menu-lateral button, .menu-lateral button:hover{
     border-radius: 12px;
     background-color: var(--light-green);
