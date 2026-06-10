@@ -42,3 +42,12 @@ export function ponerInformacion(){
     document.getElementById("categoria").textContent="Categoria: " + producto.categoria;
     document.getElementById("imagen").src=producto.imagen;
 }
+
+export function mostrarOpcionesBusqueda(){
+    const btnSubmenu=document.getElementById("despliegue-opciones-busqueda");
+    const submenu=document.getElementById("submenu");
+
+    btnSubmenu.addEventListener("click", () => {
+        submenu.classList.toggle("mostrar");
+    });
+}
