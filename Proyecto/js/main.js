@@ -1,5 +1,5 @@
 import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero } from "./productos.js";
-import { cargarProducto, ponerInformacion } from "./funciones.js";
+import { cargarProducto, ponerInformacion, mostrarOpcionesBusqueda } from "./funciones.js";
 
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
@@ -61,3 +61,5 @@ if(document.getElementById("perchero")){
 window.addEventListener("DOMContentLoaded", () =>{
     ponerInformacion();
 });
+
+mostrarOpcionesBusqueda();
