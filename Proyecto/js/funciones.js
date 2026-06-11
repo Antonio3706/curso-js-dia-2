@@ -52,14 +52,16 @@ export function mostrarOpcionesBusqueda(){
     });
 }
 
-export function alternarOpcionesBusqueda(mostrarId, ocultarId, botonId){
+export function alternarOpcionesBusqueda(mostrarId, ocultarId1, ocultarId2, botonId){
     const boton = document.getElementById(botonId);
     const mostrar = document.getElementById(mostrarId);
-    const ocultar = document.getElementById(ocultarId);
+    const ocultar1 = document.getElementById(ocultarId1);
+    const ocultar2 = document.getElementById(ocultarId2);
 
     boton.addEventListener("click", () => {
         mostrar.classList.toggle("mostrar");
-        ocultar.classList.remove("mostrar");
+        ocultar1.classList.remove("mostrar");
+        ocultar2.classList.remove("mostrar");
     });
 
 }
