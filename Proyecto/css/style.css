@@ -44,7 +44,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     width: 200px;
-    height: 400px;
+    height: 440px;
 
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr) ;
     
-    
+    padding: 20px;
     gap: 20px;
 }
 .eleccion button{
