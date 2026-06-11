@@ -52,7 +52,7 @@ export function mostrarOpcionesBusqueda(){
     });
 }
 
-export function mostrarOpcionesCategoria(mostrarId, ocultarId, botonId){
+export function alternarOpcionesBusqueda(mostrarId, ocultarId, botonId){
     const boton = document.getElementById(botonId);
     const mostrar = document.getElementById(mostrarId);
     const ocultar = document.getElementById(ocultarId);
