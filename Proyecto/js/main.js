@@ -67,19 +67,19 @@ mostrarOpcionesBusqueda();
 alternarOpcionesBusqueda(
     "contenedor-categoria",
     "contenedor2",
-    "",
+    "contenedor-marca",
     "btnCategorias"
 );
 
 alternarOpcionesBusqueda(
     "contenedor2",
     "contenedor-categoria",
-    "",
+    "contenedor-marca",
     "btnInicio"
 );
 
 alternarOpcionesBusqueda(
-    "",
+    "contenedor-marca",
     "contenedor-categoria",
     "contenedor2",
     "btnMarcas"
