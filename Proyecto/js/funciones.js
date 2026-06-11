@@ -52,11 +52,14 @@ export function mostrarOpcionesBusqueda(){
     });
 }
 
-export function mostrarOpcionesCategoria(){
-    const btnCategorias=document.getElementById("btncategorias");
-    const categorias=document.getElementById("contenedor-categoria");
+export function mostrarOpcionesCategoria(mostrarId, ocultarId, botonId){
+    const boton = document.getElementById(botonId);
+    const mostrar = document.getElementById(mostrarId);
+    const ocultar = document.getElementById(ocultarId);
 
-    btnCategorias.addEventListener("click", () => {
-        categorias.classList.toggle("mostrar");
+    boton.addEventListener("click", () => {
+        mostrar.classList.toggle("mostrar");
+        ocultar.classList.remove("mostrar");
     });
+
 }
