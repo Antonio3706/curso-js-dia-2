@@ -53,8 +53,8 @@ export function mostrarOpcionesBusqueda(){
 }
 
 export function mostrarOpcionesCategoria(){
-    const btnCategoriasu=document.getElementById("contenedor-categoria");
-    const submenu=document.getElementById("categorias");
+    const btnCategorias=document.getElementById("btncategorias");
+    const categorias=document.getElementById("contenedor-categoria");
 
     btnCategorias.addEventListener("click", () => {
         categorias.classList.toggle("mostrar");
