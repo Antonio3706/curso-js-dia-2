@@ -10,7 +10,7 @@ body {
 #contenedor2{
     display: none;
 }
-#contenedor2.active{
+.inicio.active{
     display: flex;
     width: 90%;
     max-width: 900px;
