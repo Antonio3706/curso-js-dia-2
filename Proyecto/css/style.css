@@ -165,3 +165,16 @@ h1{
     bottom: 100%;
     opacity: 0.5;
 }
+.contenedor-categoria{
+    display: none;
+}
+.contenedor-categoria.mostrar{
+    width: 90%;
+    max-width: 900px;
+    
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin: 40px auto;
+    gap: 40px;
+}
