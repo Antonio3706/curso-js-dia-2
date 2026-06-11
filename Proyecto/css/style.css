@@ -11,10 +11,10 @@ body {
     display: none;
 }
 #contenedor2.active{
+    display: flex;
     width: 90%;
     max-width: 900px;
 
-    display: flex;
     flex: 1;
     flex-direction: row;
     margin: 40px auto;
