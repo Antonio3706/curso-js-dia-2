@@ -51,3 +51,12 @@ export function mostrarOpcionesBusqueda(){
         submenu.classList.toggle("mostrar");
     });
 }
+
+export function mostrarOpcionesCategoria(){
+    const btnCategoriasu=document.getElementById("contenedor-categoria");
+    const submenu=document.getElementById("categorias");
+
+    btnCategorias.addEventListener("click", () => {
+        categorias.classList.toggle("mostrar");
+    });
+}
