@@ -65,3 +65,8 @@ export function alternarOpcionesBusqueda(mostrarId, ocultarId1, ocultarId2, boto
     });
 
 }
+export function logger(req, res, next){
+    console.log(`[${new Date().toISOString()}]`);
+    console.log(`${req.method} ${req.url}`);
+    next();
+}
