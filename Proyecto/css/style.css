@@ -1,12 +1,15 @@
+/*Cuerpo base para todos los html.*/
 body {
     font-family: Arial, sans-serif;
     background-color: skyblue;
 }
+/*Los contenedores en index.*/
 .contenedor {
     width: 90%;
     max-width: 600px;
     margin: 40px auto;
 }
+/*Mostrar siempre al iniciar la página una de las opciones de búsqueda.*/
 #contenedor2{
     display: none;
 }
@@ -20,26 +23,7 @@ body {
     margin: 40px auto;
     gap: 40px;
 }
-/*.tarjeta {
-    background-color: darksalmon;
-    padding: 1px;
-    border-radius: 12px ;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    position: fixed;
-    left: 0;
-    top: 10;
-
-    width: 200px;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    padding: 20px; 
-    
-}*/
+/*Configuración de los botones para elegir productos*/
 .menu-lateral{
     background-color: var(--dark-salmon);
 
@@ -95,6 +79,13 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+/* Formato del título en todas las páginas. */
+h1{
+    text-align: center;
+    border-radius: 12px;
+    background-color: #90ee90;
+}
+/* PArte donde se muestra el producto con su información y su imagen en descripciones.html. */
 .caja{
     background-color: var(--dark-salmon);
 
@@ -113,12 +104,13 @@ body {
 .descripcionProducto{
     font-size: 20px;
 }
-h1{
-    text-align: center;
-    border-radius: 12px;
-    background-color: #90ee90;
+#imagen{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
 }
-
+/* Configuracion de la barra de búsqueda y del submenu. */
 .barra-busqueda{
     display: flex;
     flex-direction: row;
@@ -157,17 +149,13 @@ h1{
     width: 95%;
 }
 
-#imagen{
-    display: block;
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
-}
-#pie{
+/* Configuración del pie de página. */
+.pie{
     text-align: center;
     bottom: 100%;
     opacity: 0.5;
 }
+/* Configuración de los botones del submenu de la barra de búsqueda. */
 #contenedor-categoria{
     display: none;
 }
@@ -193,4 +181,37 @@ h1{
     flex-direction: row;
     margin: 40px auto;
     gap: 40px;
+}
+/* Configuración de los componentes de inicio-secion.html. */
+.iniciar{
+    background-color: var(--dark-salmon);
+
+    border-radius: 12px ;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.correo, .contrasena {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botones button, .botones button:hover{
+    border-radius: 12px;
+    background-color: var(--light-green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.botones button, .botones button:active{
+    border-radius: 12px;
+    background-color: var(--green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
 }
