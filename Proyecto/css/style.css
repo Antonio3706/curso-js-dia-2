@@ -192,7 +192,7 @@ h1{
     gap: 40px;
 }
 /* Configuración de los componentes de inicio-secion.html. */
-.iniciar{
+.iniciar, .registrar{
     background-color: var(--dark-salmon);
 
     border-radius: 12px ;
@@ -208,7 +208,7 @@ h1{
     max-width: 600px;
     margin: 40px auto;
 }
-.correo, .contrasena {
+.correo, .contrasena, .contrasena2, .nombre, .apellidos {
     display: flex;
     align-items: center;
     gap: 10px;
