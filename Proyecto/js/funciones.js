@@ -15,7 +15,7 @@ function ventanaPro(productos){
         botones[i].addEventListener("click",()=>{
             console.log(productos[i]);
             localStorage.setItem("prodSelec", JSON.stringify(productos[i]));
-            window.location.href="descripciones.html";
+            window.location.href="../html/descripciones.html";
         });
     }
 }
