@@ -2,6 +2,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: skyblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 /*Los contenedores en index.*/
 .contenedor {
@@ -152,8 +156,12 @@ h1{
 /* Configuración del pie de página. */
 .pie{
     text-align: center;
-    bottom: 100%;
     opacity: 0.5;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 /* Configuración de los botones del submenu de la barra de búsqueda. */
 #contenedor-categoria{
