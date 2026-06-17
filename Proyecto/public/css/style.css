@@ -242,3 +242,20 @@ h1{
     border: 0;
     cursor: pointer;
 }
+
+.contenedor-carrito{
+    background-color: var(--dark-salmon);
+
+    border-radius: 12px ;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+}
