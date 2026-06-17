@@ -77,10 +77,18 @@ export function añadirAlCarrito(producto){
     const columnaNombre=document.createElement("td");
     columnaNombre.textContent=producto.nombre;
 
+    const columnaCat=document.createElement("td");
+    columnaCat.textContent=producto.categoria;
+
+    const columnaCant=document.createElement("td");
+    columnaCant.textContent=1;
+
     const columnaPrecio=document.createElement("td");
     columnaPrecio.textContent=producto.precio + " €";
     
     fila.appendChild(columnaNombre);
+    fila.appendChild(columnaCat);
+    fila.appendChild(columnaCant);
     fila.appendChild(columnaPrecio);
 
     cuerpo.appendChild(fila);
