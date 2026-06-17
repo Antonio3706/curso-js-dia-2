@@ -68,3 +68,20 @@ export function logger(req, res, next){
     console.log(`${req.method} ${req.url}`);
     next();
 }
+
+export function añadirAlCarrito(producto){
+    const cuerpo=document.getElementById("cuerpoTabla");
+
+    const fila=document.createElement("tr");
+    
+    const columnaNombre=document.createElement("td");
+    columnaNombre.textContent=producto.nombre;
+
+    const columnaPrecio=document.createElement("td");
+    columnaPrecio.textContent=producto.precio + " €";
+    
+    fila.appendChild(columnaNombre);
+    fila.appendChild(columnaPrecio);
+
+    cuerpo.appendChild(fila);
+}
