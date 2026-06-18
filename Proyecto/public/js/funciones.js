@@ -95,7 +95,7 @@ export function añadirAlCarrito(producto){
 }
 
 export function botonesCategoria(producto){
-    const cat=[...new Set(prod.map(p=>p.categoria))];
+    const cat=[...new Set(prod.map(p=>p.categoria).filter(c=>c))];
     const contenedor=document.getElementById("categorias");
 
     cat.forEach(categoria => {
@@ -112,7 +112,7 @@ export function botonesCategoria(producto){
 }
 
 export function botonesMarca(producto){
-    const cat=[...new Set(prod.map(p=>p.nombre))];
+    const cat=[...new Set(prod.map(p=>p.nombre).filter(c=>c))];
     const contenedor=document.getElementById("marcas");
 
     cat.forEach(nombre => {
