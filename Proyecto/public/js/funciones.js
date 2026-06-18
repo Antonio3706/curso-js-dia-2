@@ -95,7 +95,7 @@ export function añadirAlCarrito(producto){
 }
 
 export function botonesCategoria(producto){
-    const cat=[...new Set(prod.map(p=>p.categoria).filter(c=>c))];
+    const cat=[...new Set(prod.map(p=>p.categoria).filter(Boolean))];
     const contenedor=document.getElementById("categorias");
 
     cat.forEach(categoria => {
@@ -104,7 +104,7 @@ export function botonesCategoria(producto){
         boton.textContent=categoria;
         
         boton.addEventListener("click", () =>{
-            
+            const filtrados = prod.filter(p => p.categoria === categoria);
         });
         contenedor.appendChild(boton);
     });
