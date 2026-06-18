@@ -95,8 +95,9 @@ export function añadirAlCarrito(producto){
 }
 
 export function botonesCategoria(prod){
-    const cat=[...new Set(prod.map(p=>p.categoria).filter(categoria => categoria && categoria.trim() !== ""))];
+    const cat=[...new Set(prod.map(p=>p.categoria).filter(c => c && c.trim() !== ""))];
     const contenedor=document.getElementById("categorias");
+    contenedor.innerHTML = ""; 
 
     cat.forEach(categoria => {
         const boton=document.createElement("button");
@@ -115,7 +116,8 @@ export function botonesCategoria(prod){
 export function botonesMarca(prod){
     const cat=[...new Set(prod.map(p=>p.nombre).filter(Boolean))];
     const contenedor=document.getElementById("marcas");
-
+    contenedor.innerHTML = ""; 
+    
     cat.forEach(nombre => {
         const boton=document.createElement("button");
 
