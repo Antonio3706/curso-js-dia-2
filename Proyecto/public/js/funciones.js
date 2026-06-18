@@ -96,17 +96,18 @@ export function añadirAlCarrito(producto){
 
 export function botonesCategoria(producto){
     const cat=[...new Set(prod.filter[categoria])];
-    const contenedor=document.getElementById("contenedor-categoria");
+    
     for(let i=0;i<cat.size;i++){
 
         cat.forEach(producto => {
             const boton=document.createElement("button");
 
             boton.textContent=cat[i];
-            contenedor.appendChild(boton);
+            
             boton.addEventListener("click", () =>{
                 
             });
+            const contenedor=document.getElementById("contenedor-categoria").appendChild(boton);
         });
     }
 }
