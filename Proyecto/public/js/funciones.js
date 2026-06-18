@@ -25,7 +25,7 @@ export function cargarProducto(productos){
     ventanaPro(productos);
 }
 
-export function ponerInformacion(){
+export function ponerInformacion(producto){
 
     console.log(localStorage.getItem("prodSelec"));
 
