@@ -95,19 +95,18 @@ export function añadirAlCarrito(producto){
 }
 
 export function botonesCategoria(producto){
-    const cat=[...new Set(prod.filter[categoria])];
-    
-    for(let i=0;i<cat.size;i++){
+    const cat=[...new Set(prod.map(p=>p.categoria))];
+    const contenedor=document.getElementById("categorias");
 
-        cat.forEach(producto => {
-            const boton=document.createElement("button");
+    cat.forEach(categoria => {
+        const boton=document.createElement("button");
 
-            boton.textContent=cat[i];
+        boton.textContent=categoria;
+        
+        boton.addEventListener("click", () =>{
             
-            boton.addEventListener("click", () =>{
-                
-            });
-            const contenedor=document.getElementById("categorias").appendChild(boton);
         });
-    }
+        contenedor.appendChild(boton);
+    });
+
 }
