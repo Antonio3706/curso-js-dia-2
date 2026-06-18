@@ -95,7 +95,7 @@ export function añadirAlCarrito(producto){
 }
 
 export function botonesCategoria(prod){
-    const cat=[...new Set(prod.map(p=>p.categoria).filter(Boolean))];
+    const cat=[...new Set(prod.map(p=>p.categoria).filter(categoria => categoria && categoria.trim() !== ""))];
     const contenedor=document.getElementById("categorias");
 
     cat.forEach(categoria => {
