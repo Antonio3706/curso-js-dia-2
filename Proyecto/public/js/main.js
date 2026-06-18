@@ -85,5 +85,5 @@ alternarOpcionesBusqueda(
     "btnMarcas"
 );
 
-botonesCategoria();
-botonesMarca();
+botonesCategoria(prod);
+botonesMarca(prod);
