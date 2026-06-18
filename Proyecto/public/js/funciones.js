@@ -110,3 +110,20 @@ export function botonesCategoria(producto){
     });
 
 }
+
+export function botonesMarca(producto){
+    const cat=[...new Set(prod.map(p=>p.marca))];
+    const contenedor=document.getElementById("marcas");
+
+    cat.forEach(marca => {
+        const boton=document.createElement("button");
+
+        boton.textContent=marca;
+        
+        boton.addEventListener("click", () =>{
+            
+        });
+        contenedor.appendChild(boton);
+    });
+
+}
