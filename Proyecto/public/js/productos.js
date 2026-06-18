@@ -78,3 +78,13 @@ export const perchero=[
     {nombre: 'Älganäs', precio: 29.99, descripcion: 'Una solución de almacenaje inteligente que te alegrará la vida. Este original perchero con zapatero tiene espacio para lo que quieras, desde chaquetas y llaves hasta zapatillas. Además, se fija a la pared y cabe en un espacio diminuto.', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/alganas-perchero-con-zapatero-negro__1424874_pe979379_s5.jpg?f=xs', tipo:'perchero'},
     {nombre: 'Ekrar', precio: 29.99, descripcion: 'El producto se puede reciclar o destinar a recuperación energética (si está disponible en tu zona).', categoria: 'Dormitorio', imagen: 'https://www.ikea.com/es/es/images/products/ekrar-perchero-blanco__0598722_pe677789_s5.jpg?f=xs', tipo:'perchero'},
 ];
+export const prod=[
+    ...silla,
+    ...mesa,
+    ...escritorio,
+    ...armario,
+    ...inodoro,
+    ...encimera,
+    ...estanteria,
+    ...perchero
+];
