@@ -1,5 +1,5 @@
-import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero } from "./productos.js";
-import { cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda } from "./funciones.js";
+import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero, prod } from "./productos.js";
+import { cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria } from "./funciones.js";
 
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
@@ -84,3 +84,5 @@ alternarOpcionesBusqueda(
     "contenedor2",
     "btnMarcas"
 );
+
+botonesCategoria();
