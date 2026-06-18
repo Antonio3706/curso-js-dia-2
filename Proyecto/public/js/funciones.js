@@ -25,7 +25,7 @@ export function cargarProducto(productos){
     ventanaPro(productos);
 }
 
-export function ponerInformacion(producto){
+export function ponerInformacion(){
 
     console.log(localStorage.getItem("prodSelec"));
 
@@ -113,7 +113,7 @@ export function botonesCategoria(prod){
 }
 
 export function botonesMarca(prod){
-    const cat=[...new Set(prod.map(p=>p.nombre).filter(c=>c))];
+    const cat=[...new Set(prod.map(p=>p.nombre).filter(Boolean))];
     const contenedor=document.getElementById("marcas");
 
     cat.forEach(nombre => {
@@ -122,7 +122,8 @@ export function botonesMarca(prod){
         boton.textContent=nombre;
         
         boton.addEventListener("click", () =>{
-            
+            const filtrados = prod.filter(p => p.nombre === nombre);
+            console.log(filtrados);
         });
         contenedor.appendChild(boton);
     });
