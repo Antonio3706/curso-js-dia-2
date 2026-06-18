@@ -94,7 +94,7 @@ export function añadirAlCarrito(producto){
     cuerpo.appendChild(fila);
 }
 
-export function botonesCategoria(producto){
+export function botonesCategoria(prod){
     const cat=[...new Set(prod.map(p=>p.categoria).filter(Boolean))];
     const contenedor=document.getElementById("categorias");
 
@@ -105,13 +105,14 @@ export function botonesCategoria(producto){
         
         boton.addEventListener("click", () =>{
             const filtrados = prod.filter(p => p.categoria === categoria);
+            console.log(filtrados);
         });
         contenedor.appendChild(boton);
     });
 
 }
 
-export function botonesMarca(producto){
+export function botonesMarca(prod){
     const cat=[...new Set(prod.map(p=>p.nombre).filter(c=>c))];
     const contenedor=document.getElementById("marcas");
 
