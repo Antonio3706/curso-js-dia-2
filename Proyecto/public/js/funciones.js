@@ -107,7 +107,7 @@ export function botonesCategoria(producto){
             boton.addEventListener("click", () =>{
                 
             });
-            const contenedor=document.getElementById("contenedor-categoria").appendChild(boton);
+            const contenedor=document.getElementById("categorias").appendChild(boton);
         });
     }
 }
