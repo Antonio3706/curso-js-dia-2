@@ -112,13 +112,13 @@ export function botonesCategoria(producto){
 }
 
 export function botonesMarca(producto){
-    const cat=[...new Set(prod.map(p=>p.marca))];
+    const cat=[...new Set(prod.map(p=>p.nombre))];
     const contenedor=document.getElementById("marcas");
 
-    cat.forEach(marca => {
+    cat.forEach(nombre => {
         const boton=document.createElement("button");
 
-        boton.textContent=marca;
+        boton.textContent=nombre;
         
         boton.addEventListener("click", () =>{
             
