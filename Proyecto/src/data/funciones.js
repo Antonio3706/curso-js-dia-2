@@ -1,4 +1,4 @@
-import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero, prod} from "./src/data/productos.js";
+import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero, prod} from "./productos.js";
 
 function ponerNombre(productos){
     const boton = document.querySelectorAll(".boton");
