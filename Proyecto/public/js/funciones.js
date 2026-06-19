@@ -132,14 +132,14 @@ export function botonesMarca(prod){
 
 }
 
-function ventanaCarrito(){
+export function ventanaCarrito(){
     const boton=document.getElementById("btnCarrito");
         boton.addEventListener("click",()=>{
             window.location.href="../html/carrito.html";
         });
 }
 
-function ventanaPerfil(){
+export function ventanaPerfil(){
     const boton=document.getElementById("btnUsuario");
         boton.addEventListener("click",()=>{
             window.location.href="../html/usuario.html";
