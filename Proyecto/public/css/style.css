@@ -159,7 +159,7 @@ h1{
     text-align: center;
     opacity: 0.5;
 
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
