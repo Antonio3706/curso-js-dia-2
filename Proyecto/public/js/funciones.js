@@ -1,12 +1,12 @@
 import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero, prod} from "./productos.js";
 import mysql from "mysql2/promise";
 
-export async function bd() {
+export async function bd(prod) {
     const connection = await mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "tu_password",
-        database: "tienda"
+        password: "root",
+        database: "wood_trend"
     });
 
     for (const item of prod) {
