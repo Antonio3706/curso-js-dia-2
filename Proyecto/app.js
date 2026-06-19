@@ -1,31 +1,39 @@
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const express=require('express');
+import { prod } from "./productos.js";
+import { bd } from "./seed.js";
+
 const app=express();
-const path = require('path');
 
-app.set('view engine', 'ejs');
 
-app.set('views', path.join(__dirname, 'src/views'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "src/views"));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.get('/', (req, res) => {
-    res.render('index');
+// Rutas
+app.get("/", (req, res) => {
+    res.render("index");
 });
 
-app.get('/descripcion', (req, res) => {
-    res.render('descripcion');
+app.get("/descripcion", (req, res) => {
+    res.render("descripcion");
 });
 
-app.get('/carrito', (req, res) => {
-    res.render('carrito');
+app.get("/carrito", (req, res) => {
+    res.render("carrito");
 });
 
-app.get('/usuario', (req, res) => {
-    res.render('usuario');
+app.get("/usuario", (req, res) => {
+    res.render("usuario");
 });
 
+app.get("/seed", async (req, res) => {
+    await bd(prod);
+    res.send("Base de datos rellenada");
+});
 
 app.listen(8080, () => {
     console.log('Servidor iniciado en http://localhost:8080');
 });
-
