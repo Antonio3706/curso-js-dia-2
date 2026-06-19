@@ -88,5 +88,10 @@ alternarOpcionesBusqueda(
 botonesCategoria(prod);
 botonesMarca(prod);
 
-ventanaPerfil();
-ventanaCarrito();
+window.addEventListener("DOMContentLoaded", () =>{
+    ventanaCarrito();
+});
+
+window.addEventListener("DOMContentLoaded", () =>{
+    ventanaPerfil();
+});
