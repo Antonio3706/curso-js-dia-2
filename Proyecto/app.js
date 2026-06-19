@@ -20,8 +20,8 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.get("/descripcion", (req, res) => {
-    res.render("descripcion");
+app.get("/descripciones", (req, res) => {
+    res.render("descripciones");
 });
 
 app.get("/carrito", (req, res) => {
