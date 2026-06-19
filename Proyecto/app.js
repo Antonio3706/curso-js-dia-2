@@ -7,12 +7,13 @@ const path = require('path');
 app.set('view engine', 'ejs');
 
 app.set('views', path.join(__dirname, 'src/views'));
-app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.listen(8080);
+app.listen(8080, () => {
+    console.log('Servidor iniciado en http://localhost:8080');
+});
 
