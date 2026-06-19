@@ -1,5 +1,5 @@
 import { connection } from "./db.js";
-import { prod } from "../data/productos.js";
+import { prod } from "../public/data/productos.js";
 
 export async function bd(prod) {
     for (const item of prod) {
