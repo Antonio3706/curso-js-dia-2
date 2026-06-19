@@ -87,4 +87,7 @@ export const prod=[
     ...encimera,
     ...estanteria,
     ...perchero
-];
+].map(p => ({
+  ...p,
+  nombre: p.nombre.trim()
+}));
