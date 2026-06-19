@@ -2,8 +2,8 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { prod } from "./productos.js";
-import { bd } from "./seed.js";
+import { prod } from "./public/js/productos.js";
+import { bd } from "./server/seed.js";
 
 const app=express();
 
