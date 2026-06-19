@@ -13,6 +13,19 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/descripcion', (req, res) => {
+    res.render('descripcion');
+});
+
+app.get('/carrito', (req, res) => {
+    res.render('carrito');
+});
+
+app.get('/usuario', (req, res) => {
+    res.render('usuario');
+});
+
+
 app.listen(8080, () => {
     console.log('Servidor iniciado en http://localhost:8080');
 });

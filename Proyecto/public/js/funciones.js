@@ -15,7 +15,7 @@ function ventanaPro(productos){
         botones[i].addEventListener("click",()=>{
             console.log(productos[i]);
             localStorage.setItem("prodSelec", JSON.stringify(productos[i]));
-            window.location.href="../html/descripciones.html";
+            window.location.href="/descripciones";
         });
     }
 }
@@ -135,13 +135,13 @@ export function botonesMarca(prod){
 export function ventanaCarrito(){
     const boton=document.getElementById("btnCarrito");
         boton.addEventListener("click",()=>{
-            window.location.href="../html/carrito.html";
+            window.location.href="/carrito";
         });
 }
 
 export function ventanaPerfil(){
     const boton=document.getElementById("btnUsuario");
         boton.addEventListener("click",()=>{
-            window.location.href="../html/usuario.html";
+            window.location.href="/usuario";
         });
 }
