@@ -2,7 +2,12 @@ import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perche
 import mysql from "mysql2/promise";
 
 export async function bd() {
-    const connection = await conn();
+    const connection = await mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "tu_password",
+        database: "tienda"
+    });
 
     for (const item of prod) {
         await connection.execute(
