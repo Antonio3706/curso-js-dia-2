@@ -1,5 +1,5 @@
 import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero, prod} from "./productos.js";
-import mysql from "mysql2/promise";
+import { connection } from "./db.js";
 
 export async function bd(prod) {
     for (const item of prod) {
