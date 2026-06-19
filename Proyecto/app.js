@@ -11,8 +11,9 @@ const app=express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "src/views"));
+app.set("view engine", "ejs");
+
 app.use(express.static(path.join(__dirname, "src/public")));
 
 // Rutas
@@ -33,8 +34,13 @@ app.get("/usuario", (req, res) => {
 });
 
 app.get("/seed", async (req, res) => {
-    await bd(prod);
-    res.send("Base de datos rellenada");
+    try {
+        await bd(prod);
+        res.send("Base de datos rellenada");
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Error al rellenar BD");
+    }
 });
 
 app.listen(8080, () => {
