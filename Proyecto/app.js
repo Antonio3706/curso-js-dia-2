@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { prod } from "./src/public/data/productos.js";
+import { prod } from "./src/public/js/productos.js";
 import { bd } from "./src/server/seed.js";
 
 const app=express();
