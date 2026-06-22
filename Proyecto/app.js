@@ -3,7 +3,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { prod } from "./src/public/js/productos.js";
-//import { bd } from "./src/server/seed.js";
+import { connection } from "./src/server/db.js";
+import { usuRegistro } from "./src/server/seed.js";
 
 const app=express();
 
@@ -21,7 +22,7 @@ app.use(express.static(path.join(__dirname, "src/public")));
 
 // Rutas
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render("registro");
 });
 
 app.get("/descripciones", (req, res) => {
