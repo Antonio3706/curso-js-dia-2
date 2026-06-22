@@ -173,3 +173,31 @@ export function inicioSesion(){
         console.log(data);
     });
 }
+
+export function registrarse(){
+    document.getElementById("btnRegistrarse").addEventListener("click", async () => {
+
+    const nombre = document.getElementById("inNombre").value;
+    const apellidos = document.getElementById("inApellidos").value;
+    const email = document.getElementById("inRegEmail").value;
+    const contrasena = document.getElementById("inRegContr").value;
+    const contrasena2 = document.getElementById("inRegContr2").value;
+
+    const res = await fetch("/registro", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            nombre,
+            apellidos,
+            email,
+            contrasena,
+            contrasena2
+        })
+    });
+
+    const data = await res.json();
+    console.log(data);
+º   });
+}

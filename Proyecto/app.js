@@ -3,11 +3,11 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { prod } from "./src/public/js/productos.js";
-import { bd } from "./src/server/seed.js";
+//import { bd } from "./src/server/seed.js";
 
 const app=express();
 
-await bd(prod);
+//await bd(prod);
 
 // equivalente a __dirname en ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -36,13 +36,25 @@ app.get("/usuario", (req, res) => {
     res.render("usuario");
 });
 
-app.get("/seed", async (req, res) => {
+/*app.get("/seed", async (req, res) => {
     try {
         await bd(prod);
         res.send("Base de datos rellenada");
     } catch (err) {
         console.error(err);
         res.status(500).send("Error al rellenar BD");
+    }
+});*/
+
+app.post("/registro", async (req, res) => {
+
+    try {
+        await usuRegistro(req.body);
+        res.json({ ok: true, msg: "Usuario creado" });
+
+    } catch (err) {
+        console.error(err);
+        res.json({ ok: false, msg: "Error al registrar" });
     }
 });
 
