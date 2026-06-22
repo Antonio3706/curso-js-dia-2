@@ -1,5 +1,5 @@
 import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero, prod } from "./productos.js";
-import { registrarse, cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
+import { reg, cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
@@ -10,49 +10,49 @@ const control6=document.getElementById("inodoro");
 const control7=document.getElementById("mesa");
 const control8=document.getElementById("perchero");
 
-if(document.getElementById("silla")){
+if(control1){
     control1.addEventListener('click', () => {
         cargarProducto(silla);
     });
 }
 
-if(document.getElementById("armario")){
+if(control2){
     control2.addEventListener('click', () => {
         cargarProducto(armario);
     });
 }
 
-if(document.getElementById("encimera")){
+if(control3){
     control3.addEventListener('click', () => {
         cargarProducto(encimera);
     });
 }
 
-if(document.getElementById("escritorio")){
+if(control4){
     control4.addEventListener('click', () => {
         cargarProducto(escritorio);
     });
 }
 
-if(document.getElementById("estanteria")){
+if(control5){
     control5.addEventListener('click', () => {
         cargarProducto(estanteria);
     });
 }
 
-if(document.getElementById("inodoro")){
+if(control6){
     control6.addEventListener('click', () => {
         cargarProducto(inodoro);
     });
 }
 
-if(document.getElementById("mesa")){
+if(control7){
     control7.addEventListener('click', () => {
         cargarProducto(mesa);
     });
 }
 
-if(document.getElementById("perchero")){
+if(control8){
     control8.addEventListener('click', () => {
         cargarProducto(perchero);
     });
@@ -96,6 +96,23 @@ window.addEventListener("DOMContentLoaded", () =>{
     ventanaPerfil();
 });
 
+reg();
+
 document.addEventListener("DOMContentLoaded", () => {
-    registrarse();
+
+    const page = document.body.dataset.page;
+
+    switch (page) {
+        case "registro":
+            initRegistro();
+            break;
+
+        case "index":
+            initHome();
+            break;
+
+        case "carrito":
+            initCarrito();
+            break;
+    }
 });

@@ -19,7 +19,7 @@ app.set("views", path.join(__dirname, "src/views"));
 
 
 app.use(express.static(path.join(__dirname, "src/public")));
-
+app.use(express.json());
 // Rutas
 app.get("/", (req, res) => {
     res.render("registro");
@@ -48,6 +48,8 @@ app.get("/usuario", (req, res) => {
 });*/
 
 app.post("/registro", async (req, res) => {
+    console.log("ENTRA EN /registro");
+    console.log(req.body);
 
     try {
         await usuRegistro(req.body);
@@ -55,11 +57,11 @@ app.post("/registro", async (req, res) => {
 
     } catch (err) {
         console.error(err);
-        res.json({ ok: false, msg: "Error al registrar" });
+        res.json({ ok: false, msg: err.message });
     }
 });
 
-function login(){
+/*function login(){
     app.post("/login", async (req, res) => {
 
         const { email, password } = req.body;
@@ -75,7 +77,7 @@ function login(){
             res.json({ ok: false, message: "Usuario no válido" });
         }
     });
-}
+}*/
 
 app.listen(8080, () => {
     console.log('Servidor iniciado en http://localhost:8080');

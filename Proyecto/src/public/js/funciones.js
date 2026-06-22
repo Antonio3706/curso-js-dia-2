@@ -174,30 +174,36 @@ export function inicioSesion(){
     });
 }
 
-export function registrarse(){
-    document.getElementById("btnRegistrarse").addEventListener("click", async () => {
+function registrarse(){
+    document.getElementById("registroForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-    const nombre = document.getElementById("inNombre").value;
-    const apellidos = document.getElementById("inApellidos").value;
-    const email = document.getElementById("inRegEmail").value;
-    const contrasena = document.getElementById("inRegContr").value;
-    const contrasena2 = document.getElementById("inRegContr2").value;
+        const datos = {
+            nombre: document.getElementById("inNombre").value,
+            apellidos: document.getElementById("inApellidos").value,
+            email: document.getElementById("inRegEmail").value,
+            contrasena: document.getElementById("inRegContr").value,
+            contrasena2: document.getElementById("inRegContr2").value
+        };
 
-    const res = await fetch("/registro", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            nombre,
-            apellidos,
-            email,
-            contrasena,
-            contrasena2
-        })
+        const res = await fetch("/registro", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(datos)
+        });
+
+        console.log(await res.json());
     });
+}
 
-    const data = await res.json();
-    console.log(data);
-º   });
+export function reg(){
+    const form = document.getElementById("registroForm");
+
+    if (form) {
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            console.log("SUBMIT OK");
+            registrarse();
+        });
+    };
 }
