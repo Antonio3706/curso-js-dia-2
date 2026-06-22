@@ -1,5 +1,6 @@
 import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero, prod} from "./productos.js";
 
+//Funciones para poner la informacion de los productos en "descripciones".
 function ponerNombre(productos){
     const boton = document.querySelectorAll(".boton");
         
@@ -41,6 +42,7 @@ export function ponerInformacion(){
     document.getElementById("imagen").src=producto.imagen;
 }
 
+//Funciones para el submenu con diferentes tipos de busqueda.
 export function mostrarOpcionesBusqueda(){
     const btnSubmenu=document.getElementById("despliegue-opciones-busqueda");
     const submenu=document.getElementById("submenu");
@@ -63,12 +65,15 @@ export function alternarOpcionesBusqueda(mostrarId, ocultarId1, ocultarId2, boto
     });
 
 }
+
+
 export function logger(req, res, next){
     console.log(`[${new Date().toISOString()}]`);
     console.log(`${req.method} ${req.url}`);
     next();
 }
 
+//Funcion para crear la lista del carrito.
 export function añadirAlCarrito(producto){
     const cuerpo=document.getElementById("cuerpoTabla");
 
@@ -94,6 +99,7 @@ export function añadirAlCarrito(producto){
     cuerpo.appendChild(fila);
 }
 
+//Despliegue de los tipos de busqueda del submenu.
 export function botonesCategoria(prod){
     const cat=[...new Set(prod.map(p=>p.categoria).filter(c => c && c.trim() !== ""))];
     const contenedor=document.getElementById("categorias");
@@ -132,6 +138,7 @@ export function botonesMarca(prod){
 
 }
 
+//Para cambiar a las ventanas "carrito" o "usuario".
 export function ventanaCarrito(){
     const boton=document.getElementById("btnCarrito");
         boton.addEventListener("click",()=>{
@@ -146,6 +153,7 @@ export function ventanaPerfil(){
         });
 }
 
+//Para controlar el inicio de sesion de los usuarios.
 export function inicioSesion(){
     document.getElementById("loginBtn").addEventListener("click", async () => {
 

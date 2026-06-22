@@ -21,21 +21,19 @@ import { prod } from "../public/js/productos.js";
     console.log("Productos insertados");
 }*/
 
-/*export async function bd(prod) {
+export async function usu() {
     for (const item of prod) {
         await connection.execute(
-            `INSERT INTO productos (nombre, precio, descripcion, categoria, imagen, tipo)
-             VALUES (?, ?, ?, ?, ?, ?)`,
+            `INSERT INTO usuarios (nombre, apellidos, email, contrasena)
+             VALUES (?, ?, ?, ?)`,
             [
                 item.nombre,
-                item.precio,
-                item.descripcion,
-                item.categoria,
-                item.imagen,
-                item.tipo
+                item.apellidos,
+                item.email,
+                item.contrasena
             ]
         );
     }
 
-    console.log("Productos insertados");
-}*/
+    console.log("Usuario insertado");
+}
