@@ -145,3 +145,23 @@ export function ventanaPerfil(){
             window.location.href="/usuario";
         });
 }
+
+export function inicioSesion(){
+    document.getElementById("loginBtn").addEventListener("click", async () => {
+
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const respuesta = await fetch("/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email, password })
+        });
+
+        const data = await respuesta.json();
+
+        console.log(data);
+    });
+}
