@@ -21,7 +21,7 @@ import { prod } from "../public/js/productos.js";
     console.log("Productos insertados");
 }*/
 
-export async function bd(prod) {
+/*export async function bd(prod) {
     for (const item of prod) {
         await connection.execute(
             `INSERT INTO productos (nombre, precio, descripcion, categoria, imagen, tipo)
@@ -38,4 +38,4 @@ export async function bd(prod) {
     }
 
     console.log("Productos insertados");
-}
+}*/
