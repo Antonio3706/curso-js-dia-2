@@ -8,6 +8,12 @@ console.log(reg);
 
 reg();
 
+import { ini } from "./funciones.js";
+
+console.log(ini);
+
+ini();
+
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
 import { initInicio } from "../inicio-sesion.js";
