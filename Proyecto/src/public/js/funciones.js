@@ -202,6 +202,10 @@ export function reg() {
 
         const resultado = await res.json();
 
-        console.log(resultado);
+        if (resultado.ok) {
+            window.location.href = "/inicio-sesion";
+        } else {
+            alert(resultado.mensaje);
+        }
     });
 }

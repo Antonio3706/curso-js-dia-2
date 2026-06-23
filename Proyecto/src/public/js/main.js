@@ -9,6 +9,7 @@ console.log(reg);
 reg();
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
+import { initInicio } from "../inicio-sesion.js";
 
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
@@ -116,8 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
             initRegistro();
             break;
 
-        case "index":
-            initHome();
+        case "inicio-sesion":
+            initInicio();
             break;
 
         case "carrito":

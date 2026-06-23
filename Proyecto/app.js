@@ -38,6 +38,10 @@ app.get("/usuario", (req, res) => {
     res.render("usuario");
 });
 
+app.get("/inicio-sesion", (req, res) => {
+    res.render("inicio-sesion");
+});
+
 /*app.get("/seed", async (req, res) => {
     try {
         await bd(prod);
