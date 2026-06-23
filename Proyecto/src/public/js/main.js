@@ -105,7 +105,7 @@ window.addEventListener("DOMContentLoaded", () =>{
     ventanaPerfil();
 });
 
-reg();
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
