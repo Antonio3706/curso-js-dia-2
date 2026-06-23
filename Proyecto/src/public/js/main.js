@@ -7,6 +7,7 @@ import { reg } from "./funciones.js";
 console.log(reg);
 
 reg();
+
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
 import { initInicio } from "../inicio-sesion.js";
