@@ -174,8 +174,12 @@ export function inicioSesion(){
     });
 }
 
-function registrarse(){
-    document.getElementById("registroForm").addEventListener("submit", async (e) => {
+export function reg() {
+    const form = document.getElementById("registroForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", async (e) => {
         e.preventDefault();
 
         const datos = {
@@ -188,22 +192,14 @@ function registrarse(){
 
         const res = await fetch("/registro", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+                "Content-Type": "application/json"
+            },
             body: JSON.stringify(datos)
         });
 
-        console.log(await res.json());
+        const resultado = await res.json();
+
+        console.log(resultado);
     });
-}
-
-export function reg(){
-    const form = document.getElementById("registroForm");
-
-    if (form) {
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            console.log("SUBMIT OK");
-            registrarse();
-        });
-    };
 }
