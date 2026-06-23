@@ -4,28 +4,30 @@
             <h1>Registrarse</h1>
         </main>
         <main id="contenedor-registro" class="registrar">
-            <section class="nombre">            
-                <p>Nombre: </p>
-                <input type="text" name="" id="inNombre"/>
-            </section>
-            <section class="apellidos">            
-                <p>Apellidos: </p>
-                <input type="text" name="" id="inApellidos"/>
-            </section>
-            <section class="correo">      
-                <p>Correo: </p>
-                <input type="email" name="" id="inRegEmail"/>
-            </section>
-            <section class="contrasena">            
-                <p>Contraseña: </p>
-                <input type="password" name="" id="inRegContr"/>
-            </section>
-            <section class="contrasena2">            
-                <p>Repite contraseña: </p>
-                <input type="password" name="" id="inRegContr2"/>
-            </section>
-            <section class="botones">
-                <button type="submit" id="btnRegistrarse">Registrarse</button>
-            </section>
+            <form id="registroForm">    
+                <section class="nombre">            
+                    <p>Nombre: </p>
+                    <input type="text" name="" id="inNombre"/>
+                </section>
+                <section class="apellidos">            
+                    <p>Apellidos: </p>
+                    <input type="text" name="" id="inApellidos"/>
+                </section>
+                <section class="correo">      
+                    <p>Correo: </p>
+                    <input type="email" name="" id="inRegEmail"/>
+                </section>
+                <section class="contrasena">            
+                    <p>Contraseña: </p>
+                    <input type="password" name="" id="inRegContr"/>
+                </section>
+                <section class="contrasena2">            
+                    <p>Repite contraseña: </p>
+                    <input type="password" name="" id="inRegContr2"/>
+                </section>
+                <section class="botones">
+                    <button type="submit" id="btnRegistrarse">Registrarse</button>
+                </section>
+            </form>
         </main> 
 <%- include('partials/footer') %>

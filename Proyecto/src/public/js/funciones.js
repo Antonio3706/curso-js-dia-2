@@ -175,6 +175,8 @@ export function inicioSesion(){
 }
 
 export function reg() {
+
+    console.log("reg ejecutada");
     const form = document.getElementById("registroForm");
 
     if (!form) return;

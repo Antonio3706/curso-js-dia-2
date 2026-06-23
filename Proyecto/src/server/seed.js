@@ -25,30 +25,41 @@ import {hashPassword} from "../middleware/auth.js";
 }*/
 
 export async function usuRegistro(user) {
+
+    console.log("1. Entra en usuRegistro");
+
     const { nombre, apellidos, email, contrasena, contrasena2 } = user;
 
-    // 1. comprobar contraseñas
+    console.log("2. Datos recibidos:", user);
+
     if (contrasena !== contrasena2) {
         throw new Error("Las contraseñas no coinciden");
     }
 
-    // 2. comprobar email
+    console.log("3. Contraseñas OK");
+
     const [rows] = await connection.execute(
         "SELECT * FROM usuarios WHERE email = ?",
         [email]
     );
 
+    console.log("4. SELECT ejecutado");
+
     if (rows.length > 0) {
         throw new Error("Email ya registrado");
     }
 
-    // 3. hash password
+    console.log("5. Email libre");
+
     const hashed = await bcrypt.hash(contrasena, 10);
 
-    // 4. insertar
+    console.log("6. Hash generado");
+
     await connection.execute(
         `INSERT INTO usuarios (nombre, apellidos, email, contrasena)
          VALUES (?, ?, ?, ?)`,
         [nombre, apellidos, email, hashed]
     );
+
+    console.log("7. Usuario insertado");
 }
