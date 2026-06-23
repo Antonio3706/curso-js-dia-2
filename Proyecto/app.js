@@ -21,6 +21,7 @@ app.set("views", path.join(__dirname, "src/views"));
 app.use(express.static(path.join(__dirname, "src/public")));
 app.use(express.static(path.join(__dirname, "src/pages")));
 app.use(express.json());
+
 // Rutas
 app.get("/registro", (req, res) => {
     res.render("registro");
@@ -40,7 +41,7 @@ app.get("/usuario", (req, res) => {
 
 app.get("/", (req, res) => {
     console.log("ENTRA EN INICIO SESIÓN");
-    res.send("inicio-sesion");
+    res.render("inicio-sesion");
 });
 
 /*app.get("/seed", async (req, res) => {
