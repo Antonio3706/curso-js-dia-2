@@ -1,6 +1,9 @@
 import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero, prod } from "./productos.js";
 import { reg, cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 
+import { initCarrito } from "../../pages/carrito.js";
+import { initRegistro } from "../../pages/registro.js";
+
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
 const control3=document.getElementById("encimera");
