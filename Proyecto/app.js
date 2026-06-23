@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "src/public")));
 app.use(express.static(path.join(__dirname, "src/pages")));
 app.use(express.json());
 // Rutas
-app.get("/", (req, res) => {
+app.get("/registro", (req, res) => {
     res.render("registro");
 });
 
@@ -38,8 +38,9 @@ app.get("/usuario", (req, res) => {
     res.render("usuario");
 });
 
-app.get("/inicio-sesion", (req, res) => {
-    res.render("inicio-sesion");
+app.get("/", (req, res) => {
+    console.log("ENTRA EN INICIO SESIÓN");
+    res.send("inicio-sesion");
 });
 
 /*app.get("/seed", async (req, res) => {
