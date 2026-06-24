@@ -1,46 +1,4 @@
 
-//Funciones para poner la informacion de los productos en "descripciones".
-/*function ponerNombre(productos){
-    const boton = document.querySelectorAll(".boton");
-        
-    for (let i=0; i<boton.length; i++){
-        boton[i].textContent=productos[i].nombre;
-    }
-}
-
-function ventanaPro(productos){
-    const botones=document.querySelectorAll(".boton");
-    for (let i=0; i<botones.length; i++){
-        botones[i].textContent=productos[i].nombre;
-        botones[i].addEventListener("click",()=>{
-            console.log(productos[i]);
-            localStorage.setItem("prodSelec", JSON.stringify(productos[i]));
-            window.location.href="/descripciones";
-        });
-    }
-}
-
-export function cargarProducto(productos){
-    ponerNombre(productos);
-    ventanaPro(productos);
-}*/
-
-export function ponerInformacion(){
-
-    console.log(localStorage.getItem("prodSelec"));
-
-    const producto=JSON.parse(
-        localStorage.getItem("prodSelec")
-    );
-    if(!producto) return;
-
-    document.getElementById("nombrePro").textContent=producto.nombre;
-    document.getElementById("precio").textContent="Precio: " + producto.precio + " €";
-    document.getElementById("descripcion").textContent=producto.descripcion;
-    document.getElementById("categoria").textContent="Categoria: " + producto.categoria;
-    document.getElementById("imagen").src=producto.imagen;
-}
-
 //Funciones para el submenu con diferentes tipos de busqueda.
 export function mostrarOpcionesBusqueda(){
     const btnSubmenu=document.getElementById("despliegue-opciones-busqueda");
@@ -63,13 +21,6 @@ export function alternarOpcionesBusqueda(mostrarId, ocultarId1, ocultarId2, boto
         ocultar2.classList.remove("mostrar");
     });
 
-}
-
-
-export function logger(req, res, next){
-    console.log(`[${new Date().toISOString()}]`);
-    console.log(`${req.method} ${req.url}`);
-    next();
 }
 
 //Funcion para crear la lista del carrito.
