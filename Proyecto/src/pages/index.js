@@ -86,13 +86,8 @@ export async function initIndex(){
 
             crearBotonesFiltro({
                 productos,
-                campo: "marca",
+                campo: "nombre",
                 contenedorId: "marcas",
-
-                onFiltrar: (filtrados) => {
-                    ponerNombre(filtrados);
-                    ventanaPro(filtrados);
-                }
             });
         },
 
@@ -104,11 +99,6 @@ export async function initIndex(){
                 productos,
                 campo: "categoria",
                 contenedorId: "categorias",
-
-                onFiltrar: (filtrados) => {
-                    ponerNombre(filtrados);
-                    ventanaPro(filtrados);
-                }
             });
         }
     });
