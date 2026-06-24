@@ -1,4 +1,4 @@
-import { initMenu, crearBotonesFiltro } from "../public/js/funciones.js";
+import { initMenu, crearBotonesFiltro } from "../js/funciones.js";
 
 function ponerNombre(productos) {
     const botones = document.querySelectorAll(".boton");
@@ -63,22 +63,27 @@ export async function initIndex(){
         }
 
     });
-
-        initMenu({
+    
+    initMenu({
         productos,
 
-        botones: {
-            inicio: document.getElementById("btnInicio"),
-            marcas: document.getElementById("btnMarcas"),
-            categorias: document.getElementById("btnCategorias")
-        },
+        btnInicioId: "btnInicio",
+        btnMarcasId: "btnMarcas",
+        btnCategoriasId: "btnCategorias",
 
         onInicio: (productos) => {
+
             ponerNombre(productos);
             ventanaPro(productos);
+
+            document.getElementById("marcas").innerHTML = "";
+            document.getElementById("categorias").innerHTML = "";
         },
 
         onMarca: (productos) => {
+
+            document.getElementById("categorias").innerHTML = "";
+
             crearBotonesFiltro({
                 productos,
                 campo: "marca",
@@ -92,6 +97,9 @@ export async function initIndex(){
         },
 
         onCategoria: (productos) => {
+
+            document.getElementById("marcas").innerHTML = "";
+
             crearBotonesFiltro({
                 productos,
                 campo: "categoria",
@@ -104,4 +112,4 @@ export async function initIndex(){
             });
         }
     });
-}
+    }

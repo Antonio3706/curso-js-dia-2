@@ -1,4 +1,4 @@
-import { mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
+import { mostrarOpcionesBusqueda, alternarOpcionesBusqueda, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 console.log("ANTES");
 
 import { initCarrito } from "../carrito.js";
