@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import { connection } from "./db.js";
-import { prod } from "../public/js/productos.js";
+//import { prod } from "../public/js/productos.js";
 import {hashPassword} from "../middleware/auth.js";
 
 
