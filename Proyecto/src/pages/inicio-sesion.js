@@ -1,10 +1,8 @@
 export function initInicio() {
+
+    console.log("🔥 initInicio ejecutada");
+
     const form = document.getElementById("inicioForm");
-
-    if (!form) return;
-
-    console.log("🔥 Inicio de sesión inicializado");
-
     const btnRegistro = document.getElementById("btnRegistro");
 
     if (btnRegistro) {
@@ -13,23 +11,26 @@ export function initInicio() {
         });
     }
 
+    if (!form) return;
+
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
-
+        console.log("🔥 SUBMIT EJECUTADO");
+        
         const datos = {
             email: document.getElementById("initEmail").value,
             contrasena: document.getElementById("initPassword").value
         };
 
-        const res = await fetch("http://localhost:8080/inicio-sesion", {
+        const res = await fetch("/inicio-sesion", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(datos)
         });
 
         const resultado = await res.json();
+
+        console.log(resultado);
 
         if (resultado.ok) {
             window.location.href = "/index";

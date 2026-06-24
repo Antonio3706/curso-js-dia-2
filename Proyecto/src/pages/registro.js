@@ -1,10 +1,10 @@
 export function initRegistro() {
 
+    console.log("🔥 initRegistro ejecutada");
+
     const form = document.getElementById("registroForm");
 
     if (!form) return;
-
-    console.log("🔥 Registro inicializado");
 
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -17,18 +17,20 @@ export function initRegistro() {
             contrasena2: document.getElementById("inRegContr2").value
         };
 
-        const res = await fetch("http://localhost:8080/registro", {
+        const res = await fetch("/registro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(datos)
         });
 
-        console.log(await res.json());
+        const resultado = await res.json();
 
-       if (resultado.ok) {
+        console.log(resultado);
+
+        if (resultado.ok) {
             window.location.href = "/inicio-sesion";
         } else {
-            alert(resultado.mensaje);
+            alert(resultado.msg);
         }
     });
 }

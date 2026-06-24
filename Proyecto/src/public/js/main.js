@@ -2,20 +2,29 @@ import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perche
 import { cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 console.log("ANTES");
 
-import { reg, ini } from "./funciones.js";
-
-console.log(reg);
-
-reg();
-
-console.log(ini);
-
-ini();
-
-
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
 import { initInicio } from "../inicio-sesion.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const page = document.body.dataset.page;
+    console.log("PAGE DETECTED:", page);
+    
+    switch (page) {
+        case "registro":
+            initRegistro();
+            break;
+
+        case "inicio-sesion":
+            initInicio();
+            break;
+
+        case "carrito":
+            initCarrito();
+            break;
+    }
+});
 
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
@@ -114,21 +123,3 @@ window.addEventListener("DOMContentLoaded", () =>{
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    const page = document.body.dataset.page;
-
-    switch (page) {
-        case "registro":
-            initRegistro();
-            break;
-
-        case "inicio-sesion":
-            initInicio();
-            break;
-
-        case "carrito":
-            initCarrito();
-            break;
-    }
-});

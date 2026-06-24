@@ -8,7 +8,7 @@ import { usuRegistro, usuInit } from "./src/server/seed.js";
 
 const app=express();
 
-//await bd(prod);
+
 
 // equivalente a __dirname en ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -21,6 +21,11 @@ app.set("views", path.join(__dirname, "src/views"));
 app.use(express.static(path.join(__dirname, "src/public")));
 app.use(express.static(path.join(__dirname, "src/pages")));
 app.use(express.json());
+
+app.use((req, res, next) => {
+    console.log("REQUEST:", req.method, req.url);
+    next();
+});
 
 // Rutas
 app.get("/", (req, res) => {
@@ -64,6 +69,26 @@ app.get("/inicio-sesion", (req, res) => {
     }
 });*/
 
+app.post("/inicio-sesion", async (req, res) => {
+
+    try {
+        const usuario = await usuInit(req.body);
+
+        res.json({
+            ok: true,
+            user: usuario
+        });
+
+    } catch (error) {
+        console.error("LOGIN ERROR:", error);
+
+        res.json({
+            ok: false,
+            mensaje: error.message
+        });
+    }
+});
+
 app.post("/registro", async (req, res) => {
     console.log("ENTRA EN registro");
     console.log(req.body);
@@ -78,21 +103,7 @@ app.post("/registro", async (req, res) => {
     }
 });
 
-app.post("/inicio-sesion", async (req, res) => {
-    console.log("Entra en index");
-    try {
-        await usuInit(req.body);
-        res.json({
-            ok: true
-        });
-    } catch (error) {
 
-        res.json({
-            ok: false,
-            mensaje: error.message
-        });
-    }
-});
 
 app.listen(8080, () => {
     console.log('Servidor iniciado en http://localhost:8080');
