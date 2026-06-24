@@ -23,6 +23,16 @@ app.use(express.static(path.join(__dirname, "src/pages")));
 app.use(express.json());
 
 // Rutas
+app.get("/", (req, res) => {
+    console.log("ENTRA EN INICIO SESIÓN");
+    res.render("inicio-sesion");
+});
+
+app.get("/index", (req, res) => {
+    console.log("Entra en index");
+    res.render("index");
+});
+
 app.get("/registro", (req, res) => {
     res.render("registro");
 });
@@ -39,20 +49,11 @@ app.get("/usuario", (req, res) => {
     res.render("usuario");
 });
 
-app.get("/", (req, res) => {
-    console.log("ENTRA EN INICIO SESIÓN");
-    res.render("inicio-sesion");
-});
-
 app.get("/inicio-sesion", (req, res) => {
     console.log("ENTRA EN INICIO SESIÓN despues de registro");
     res.render("inicio-sesion");
 });
 
-app.get("/index", (req, res) => {
-    console.log("Entra en index");
-    res.render("index");
-});
 /*app.get("/seed", async (req, res) => {
     try {
         await bd(prod);
