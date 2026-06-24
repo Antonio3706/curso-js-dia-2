@@ -50,42 +50,64 @@ export function añadirAlCarrito(producto){
 }
 
 //Despliegue de los tipos de busqueda del submenu.
-export function botonesCategoria(prod){
-    const cat=[...new Set(prod.map(p=>p.categoria).filter(c => c && c.trim() !== ""))];
-    const contenedor=document.getElementById("categorias");
-    contenedor.innerHTML = ""; 
+export function crearBotonesFiltro({
+    productos,
+    campo,
+    contenedorId,
+    onFiltrar
+}) {
 
-    cat.forEach(categoria => {
-        const boton=document.createElement("button");
+    const valores = [
+        ...new Set(
+            productos
+                .map(p => p[campo])
+                .filter(Boolean)
+        )
+    ];
 
-        boton.textContent=categoria;
-        
-        boton.addEventListener("click", () =>{
-            const filtrados = prod.filter(p => p.categoria === categoria);
-            console.log(filtrados);
-        });
+    const contenedor = document.getElementById(contenedorId);
+
+    if (!contenedor) return;
+
+    contenedor.innerHTML = "";
+
+    valores.forEach(valor => {
+
+        const boton = document.createElement("button");
+        boton.textContent = valor;
+
+        boton.onclick = () => {
+
+            const filtrados = productos.filter(
+                p => p[campo] === valor
+            );
+
+            onFiltrar(filtrados);
+        };
+
         contenedor.appendChild(boton);
     });
-
 }
 
-export function botonesMarca(prod){
-    const cat=[...new Set(prod.map(p=>p.nombre).filter(Boolean))];
-    const contenedor=document.getElementById("marcas");
-    contenedor.innerHTML = ""; 
-    
-    cat.forEach(nombre => {
-        const boton=document.createElement("button");
+export function initMenu({
+    productos,
+    botones,
+    onInicio,
+    onMarca,
+    onCategoria
+}) {
 
-        boton.textContent=nombre;
-        
-        boton.addEventListener("click", () =>{
-            const filtrados = prod.filter(p => p.nombre === nombre);
-            console.log(filtrados);
-        });
-        contenedor.appendChild(boton);
+    botones.inicio?.addEventListener("click", () => {
+        onInicio(productos);
     });
 
+    botones.marcas?.addEventListener("click", () => {
+        onMarca(productos);
+    });
+
+    botones.categorias?.addEventListener("click", () => {
+        onCategoria(productos);
+    });
 }
 
 //Para cambiar a las ventanas "carrito" o "usuario".
