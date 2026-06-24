@@ -1,7 +1,6 @@
-import { silla, mesa, escritorio, estanteria, encimera, armario, inodoro, perchero, prod} from "./productos.js";
 
 //Funciones para poner la informacion de los productos en "descripciones".
-function ponerNombre(productos){
+/*function ponerNombre(productos){
     const boton = document.querySelectorAll(".boton");
         
     for (let i=0; i<boton.length; i++){
@@ -24,7 +23,7 @@ function ventanaPro(productos){
 export function cargarProducto(productos){
     ponerNombre(productos);
     ventanaPro(productos);
-}
+}*/
 
 export function ponerInformacion(){
 

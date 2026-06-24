@@ -1,10 +1,10 @@
-import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perchero, prod } from "./productos.js";
-import { cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
+import {  ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 console.log("ANTES");
 
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
 import { initInicio } from "../inicio-sesion.js";
+import { initIndex } from "../index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -23,9 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
         case "carrito":
             initCarrito();
             break;
+    
+        case "index":
+            initIndex();
+            break;
     }
 });
-
+/*
 const control1=document.getElementById("silla");
 const control2=document.getElementById("armario");
 const control3=document.getElementById("encimera");
@@ -86,7 +90,7 @@ if(control8){
 window.addEventListener("DOMContentLoaded", () =>{
     ponerInformacion();
 });
-
+*/
 mostrarOpcionesBusqueda();
 
 alternarOpcionesBusqueda(
@@ -109,7 +113,7 @@ alternarOpcionesBusqueda(
     "contenedor2",
     "btnMarcas"
 );
-
+/*
 botonesCategoria(prod);
 botonesMarca(prod);
 
@@ -119,7 +123,7 @@ window.addEventListener("DOMContentLoaded", () =>{
 
 window.addEventListener("DOMContentLoaded", () =>{
     ventanaPerfil();
-});
+});*/
 
 
 

@@ -5,10 +5,9 @@ import { fileURLToPath } from "url";
 import { prod } from "./src/public/js/productos.js";
 import { connection } from "./src/server/db.js";
 import { usuRegistro, usuInit } from "./src/server/seed.js";
+import productoRouter from "./src/api/productos.js";
 
 const app=express();
-
-
 
 // equivalente a __dirname en ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -22,6 +21,11 @@ app.use(express.static(path.join(__dirname, "src/public")));
 app.use(express.static(path.join(__dirname, "src/pages")));
 app.use(express.json());
 
+
+const router = express.Router();
+
+app.use("/api/productos", productoRouter);
+
 app.use((req, res, next) => {
     console.log("REQUEST:", req.method, req.url);
     next();
@@ -33,8 +37,7 @@ app.get("/", (req, res) => {
     res.render("inicio-sesion");
 });
 
-app.get("/index", (req, res) => {
-    console.log("Entra en index");
+app.get("/index", async (req, res) => {
     res.render("index");
 });
 
