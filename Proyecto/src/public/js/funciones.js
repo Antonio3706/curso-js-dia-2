@@ -154,26 +154,6 @@ export function ventanaPerfil(){
 }
 
 //Para controlar el inicio de sesion de los usuarios.
-export function inicioSesion(){
-    document.getElementById("loginBtn").addEventListener("click", async () => {
-
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        const respuesta = await fetch("/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ email, password })
-        });
-
-        const data = await respuesta.json();
-
-        console.log(data);
-    });
-}
-
 export function reg() {
 
     console.log("reg ejecutada");
@@ -213,7 +193,16 @@ export function reg() {
 export function ini() {
 
     console.log("ini ejecutada");
+
     const form = document.getElementById("inicioForm");
+    const btnRegistro = document.getElementById("btnRegistro");
+    const btnInicio = document.getElementById("btnInicio");
+
+    if (btnRegistro) {
+        btnRegistro.addEventListener("click", () => {
+            window.location.href = "/registro";
+        });
+    }
 
     if (!form) return;
 
@@ -242,3 +231,4 @@ export function ini() {
         }
     });
 }
+

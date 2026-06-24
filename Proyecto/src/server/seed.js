@@ -48,30 +48,27 @@ export async function usuRegistro(user) {
 //Que compruebe el correo de la base de datos
 export async function usuInit(user) {
 
-    console.log("1. Entra en usuInit");
-
-    const {  email, contrasena } = user;
-
-    console.log("2. Datos recibidos:", user);
-
-    if (contrasena !== contrasena2) {
-        throw new Error("Las contraseñas no coinciden");
-    }
-
+    const { email, contrasena } = user;
 
     const [rows] = await connection.execute(
         "SELECT * FROM usuarios WHERE email = ?",
         [email]
     );
 
-    console.log("4. SELECT ejecutado");
-
-    if (rows.length > 0) {
-        throw new Error("Email ya registrado");
+    if (rows.length === 0) {
+        throw new Error("Usuario no encontrado");
     }
 
-    console.log("5. Email libre");
+    const usuario = rows[0];
 
-    const hashed = await bcrypt.hash(contrasena, 10);
+    const coincide = await bcrypt.compare(
+        contrasena,
+        usuario.contrasena
+    );
 
+    if (!coincide) {
+        throw new Error("Contraseña incorrecta");
+    }
+
+    return usuario;
 }

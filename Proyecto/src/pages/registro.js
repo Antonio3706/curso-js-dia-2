@@ -6,6 +6,14 @@ export function initRegistro() {
 
     console.log("🔥 Registro inicializado");
 
+    const btn = document.getElementById("btnRegistrarse");
+
+    if (!btn) return;
+
+    btn.addEventListener("click", () => {
+        window.location.href = "/inicio-sesion";
+    });
+
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
 

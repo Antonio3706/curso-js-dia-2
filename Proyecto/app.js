@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 import { prod } from "./src/public/js/productos.js";
 import { connection } from "./src/server/db.js";
-import { usuRegistro } from "./src/server/seed.js";
+import { usuRegistro, usuInit } from "./src/server/seed.js";
 
 const app=express();
 
@@ -44,6 +44,15 @@ app.get("/", (req, res) => {
     res.render("inicio-sesion");
 });
 
+app.get("/inicio-sesion", (req, res) => {
+    console.log("ENTRA EN INICIO SESIÓN despues de registro");
+    res.render("inicio-sesion");
+});
+
+app.get("/index", (req, res) => {
+    console.log("Entra en index");
+    res.render("index");
+});
 /*app.get("/seed", async (req, res) => {
     try {
         await bd(prod);
@@ -55,7 +64,7 @@ app.get("/", (req, res) => {
 });*/
 
 app.post("/registro", async (req, res) => {
-    console.log("ENTRA EN /registro");
+    console.log("ENTRA EN registro");
     console.log(req.body);
 
     try {
@@ -68,23 +77,21 @@ app.post("/registro", async (req, res) => {
     }
 });
 
-/*function login(){
-    app.post("/login", async (req, res) => {
+app.post("/inicio-sesion", async (req, res) => {
+    console.log("Entra en index");
+    try {
+        await usuInit(req.body);
+        res.json({
+            ok: true
+        });
+    } catch (error) {
 
-        const { email, password } = req.body;
-
-        const [rows] = await connection.execute(
-            "SELECT * FROM usuarios WHERE email = ? AND password = ?",
-            [email, password]
-        );
-
-        if (rows.length > 0) {
-            res.json({ ok: true, user: rows[0] });
-        } else {
-            res.json({ ok: false, message: "Usuario no válido" });
-        }
-    });
-}*/
+        res.json({
+            ok: false,
+            mensaje: error.message
+        });
+    }
+});
 
 app.listen(8080, () => {
     console.log('Servidor iniciado en http://localhost:8080');

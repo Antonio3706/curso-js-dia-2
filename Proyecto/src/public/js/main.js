@@ -2,17 +2,16 @@ import { silla, mesa, escritorio, armario, inodoro, encimera, estanteria, perche
 import { cargarProducto, ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 console.log("ANTES");
 
-import { reg } from "./funciones.js";
+import { reg, ini } from "./funciones.js";
 
 console.log(reg);
 
 reg();
 
-import { ini } from "./funciones.js";
-
 console.log(ini);
 
 ini();
+
 
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
