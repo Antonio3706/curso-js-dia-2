@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 
-//import { prod } from "./src/public/js/productos.js";
+//import { prod } from "./src/public/js/prodecto.js";
 import { connection } from "./src/server/db.js";
 import { usuRegistro, usuInit } from "./src/server/seed.js";
 import productoRouter from "./src/api/productos.js";
