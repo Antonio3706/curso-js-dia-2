@@ -54,16 +54,8 @@ export function crearBotonesFiltro({
     productos,
     campo,
     contenedorId,
-    onFiltrar
+    onClick
 }) {
-
-    const valores = [
-        ...new Set(
-            productos
-                .map(p => p[campo])
-                .filter(Boolean)
-        )
-    ];
 
     const contenedor = document.getElementById(contenedorId);
 
@@ -71,19 +63,21 @@ export function crearBotonesFiltro({
 
     contenedor.innerHTML = "";
 
+    const valores = [...new Set(productos.map(p => p[campo]))];
+
     valores.forEach(valor => {
 
         const boton = document.createElement("button");
         boton.textContent = valor;
 
-        boton.onclick = () => {
+        boton.addEventListener("click", () => {
 
             const filtrados = productos.filter(
                 p => p[campo] === valor
             );
 
-            onFiltrar(filtrados);
-        };
+            onClick?.(filtrados, valor);
+        });
 
         contenedor.appendChild(boton);
     });
@@ -91,22 +85,28 @@ export function crearBotonesFiltro({
 
 export function initMenu({
     productos,
-    botones,
+    btnInicioId,
+    btnMarcasId,
+    btnCategoriasId,
     onInicio,
     onMarca,
     onCategoria
 }) {
 
-    botones.inicio?.addEventListener("click", () => {
-        onInicio(productos);
+    const btnInicio = document.getElementById(btnInicioId);
+    const btnMarcas = document.getElementById(btnMarcasId);
+    const btnCategorias = document.getElementById(btnCategoriasId);
+
+    btnInicio?.addEventListener("click", () => {
+        onInicio?.(productos);
     });
 
-    botones.marcas?.addEventListener("click", () => {
-        onMarca(productos);
+    btnMarcas?.addEventListener("click", () => {
+        onMarca?.(productos);
     });
 
-    botones.categorias?.addEventListener("click", () => {
-        onCategoria(productos);
+    btnCategorias?.addEventListener("click", () => {
+        onCategoria?.(productos);
     });
 }
 
