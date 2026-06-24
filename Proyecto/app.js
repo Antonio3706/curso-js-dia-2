@@ -45,7 +45,7 @@ app.get("/registro", (req, res) => {
     res.render("registro");
 });
 
-app.get("/descripciones", (req, res) => {
+app.get("/descripciones/:id", (req, res) => {
     res.render("descripciones");
 });
 
@@ -62,15 +62,17 @@ app.get("/inicio-sesion", (req, res) => {
     res.render("inicio-sesion");
 });
 
-/*app.get("/seed", async (req, res) => {
-    try {
-        await bd(prod);
-        res.send("Base de datos rellenada");
-    } catch (err) {
-        console.error(err);
-        res.status(500).send("Error al rellenar BD");
-    }
-});*/
+app.get("/api/productos/:id", async (req, res) => {
+
+    const id = req.params.id;
+
+    const [rows] = await connection.query(
+        "SELECT * FROM productos WHERE id = ?",
+        [id]
+    );
+
+    res.json(rows[0]);
+});
 
 app.post("/inicio-sesion", async (req, res) => {
 

@@ -1,10 +1,11 @@
-import {  ponerInformacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
+import { mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesCategoria, botonesMarca, ventanaCarrito, ventanaPerfil } from "./funciones.js";
 console.log("ANTES");
 
 import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
 import { initInicio } from "../inicio-sesion.js";
 import { initIndex } from "../index.js";
+import { initDescripcion } from "../descripciones.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -27,70 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
         case "index":
             initIndex();
             break;
+
+        case "descripciones":
+            initDescripcion();
+            break;
     }
 });
-/*
-const control1=document.getElementById("silla");
-const control2=document.getElementById("armario");
-const control3=document.getElementById("encimera");
-const control4=document.getElementById("escritorio");
-const control5=document.getElementById("estanteria");
-const control6=document.getElementById("inodoro");
-const control7=document.getElementById("mesa");
-const control8=document.getElementById("perchero");
 
-if(control1){
-    control1.addEventListener('click', () => {
-        cargarProducto(silla);
-    });
-}
-
-if(control2){
-    control2.addEventListener('click', () => {
-        cargarProducto(armario);
-    });
-}
-
-if(control3){
-    control3.addEventListener('click', () => {
-        cargarProducto(encimera);
-    });
-}
-
-if(control4){
-    control4.addEventListener('click', () => {
-        cargarProducto(escritorio);
-    });
-}
-
-if(control5){
-    control5.addEventListener('click', () => {
-        cargarProducto(estanteria);
-    });
-}
-
-if(control6){
-    control6.addEventListener('click', () => {
-        cargarProducto(inodoro);
-    });
-}
-
-if(control7){
-    control7.addEventListener('click', () => {
-        cargarProducto(mesa);
-    });
-}
-
-if(control8){
-    control8.addEventListener('click', () => {
-        cargarProducto(perchero);
-    });
-}
-
-window.addEventListener("DOMContentLoaded", () =>{
-    ponerInformacion();
-});
-*/
 mostrarOpcionesBusqueda();
 
 alternarOpcionesBusqueda(
