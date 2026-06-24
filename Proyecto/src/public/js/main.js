@@ -1,4 +1,4 @@
-import { mostrarOpcionesBusqueda, alternarOpcionesBusqueda, ventanaCarrito, ventanaPerfil } from "./funciones.js";
+import { mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesEsquina } from "./funciones.js";
 console.log("ANTES");
 
 import { initCarrito } from "../carrito.js";
@@ -57,17 +57,7 @@ alternarOpcionesBusqueda(
     "contenedor2",
     "btnMarcas"
 );
-/*
-botonesCategoria(prod);
-botonesMarca(prod);
 
-window.addEventListener("DOMContentLoaded", () =>{
-    ventanaCarrito();
-});
-
-window.addEventListener("DOMContentLoaded", () =>{
-    ventanaPerfil();
-});*/
-
+botonesEsquina();
 
 

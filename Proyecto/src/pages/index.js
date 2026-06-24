@@ -1,5 +1,7 @@
 import { initMenu, crearBotonesFiltro } from "../js/funciones.js";
 
+//botonesEsquina();
+
 function ponerNombre(productos) {
     const botones = document.querySelectorAll(".boton");
 

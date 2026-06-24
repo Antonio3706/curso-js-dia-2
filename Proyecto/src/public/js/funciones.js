@@ -111,16 +111,15 @@ export function initMenu({
 }
 
 //Para cambiar a las ventanas "carrito" o "usuario".
-export function ventanaCarrito(){
-    const boton=document.getElementById("btnCarrito");
-        boton.addEventListener("click",()=>{
-            window.location.href="/carrito";
-        });
-}
+export function botonesEsquina(){
+    const btnCarrito = document.getElementById("btnCarrito");
+    const btnUsuario = document.getElementById("btnUsuario");
 
-export function ventanaPerfil(){
-    const boton=document.getElementById("btnUsuario");
-        boton.addEventListener("click",()=>{
-            window.location.href="/usuario";
-        });
+    btnCarrito?.addEventListener("click", () => {
+        window.location.href = "/carrito";
+    });
+
+    btnUsuario?.addEventListener("click", () => {
+        window.location.href = "/usuario";
+    });
 }
