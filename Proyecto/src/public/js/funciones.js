@@ -110,6 +110,7 @@ export function initMenu({
     });
 }
 
+//Control de botones de la esquina
 export function initNavegacion(idBoton, ruta) {
 
     const btn = document.getElementById(idBoton);
