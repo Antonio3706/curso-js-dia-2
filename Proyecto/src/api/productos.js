@@ -1,6 +1,6 @@
 import express from "express";
 import { connection } from "../server/db.js";
-
+//Api para acceder a los datos la base de datos
 const router = express.Router();
 console.log("Cargando productosRouter...");
 

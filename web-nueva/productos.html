@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture - Nuestros Componentes</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo TechFuture"> <!-- Reemplaza logo.png con tu logo -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#soporte" class="nav-link">Soporte</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <input type="text" placeholder="Buscar componentes...">
+                <a href="#" class="btn-primary">Buscar</a>
+                <a href="#" class="icon-link"><img src="icons/user.svg" alt="Mi Cuenta"></a> <!-- Reemplaza con tus iconos -->
+                <a href="#" class="icon-link"><img src="icons/cart.svg" alt="Carrito"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="products-hero">
+            <div class="container">
+                <h2>Componentes Informáticos de Vanguardia</h2>
+                <p>Encuentra las piezas perfectas para tu próxima construcción o actualización.</p>
+            </div>
+        </section>
+
+        <section id="product-listing">
+            <div class="container">
+                <div class="filters">
+                    <h3>Filtrar por Categoría</h3>
+                    <ul>
+                        <li><a href="#" data-category="all" class="filter-link active">Todas</a></li>
+                        <li><a href="#" data-category="gpu" class="filter-link">Tarjetas Gráficas</a></li>
+                        <li><a href="#" data-category="cpu" class="filter-link">Procesadores</a></li>
+                        <li><a href="#" data-category="memory" class="filter-link">Memoria RAM</a></li>
+                        <li><a href="#" data-category="storage" class="filter-link">Almacenamiento</a></li>
+                        <li><a href="#" data-category="motherboard" class="filter-link">Placas Base</a></li>
+                        <li><a href="#" data-category="psu" class="filter-link">Fuentes de Alimentación</a></li>
+                    </ul>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                    <div class="product-card" data-category="gpu">
+                        <img src="images/gpu.png" alt="Tarjeta Gráfica RTX 4090">
+                        <h3>Tarjeta Gráfica RTX 4090</h3>
+                        <p class="description">Rendimiento sin precedentes para gaming y creación de contenido.</p>
+                        <p class="price">\\$1999.99</p>
+                        <a href="producto-detalle.html?id=gpu001" class="btn-primary">Ver Detalles</a>
+                    </div>
+                    <div class="product-card" data-category="cpu">
+                        <img src="images/cpu.png" alt="Procesador Intel Core i9">
+                        <h3>Procesador Intel Core i9-14900K</h3>
+                        <p class="description">El procesador más potente para tareas exigentes.</p>
+                        <p class="price">\\$599.99</p>
+                        <a href="producto-detalle.html?id=cpu001" class="btn-primary">Ver Detalles</a>
+                    </div>
+                    <div class="product-card" data-category="storage">
+                        <img src="images/ssd.png" alt="SSD NVMe 2TB">
+                        <h3>SSD NVMe Crucial P5 Plus 2TB</h3>
+                        <p class="description">Velocidad PCIe 4.0 para cargas ultrarrápidas.</p>
+                        <p class="price">\\$149.99</p>
+                        <a href="producto-detalle.html?id=storage001" class="btn-primary">Ver Detalles</a>
+                    </div>
+                    <div class="product-card" data-category="memory">
+                        <img src="images/ram.png" alt="Memoria RAM DDR5 32GB">
+                        <h3>Memoria RAM G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5</h3>
+                        <p class="description">Alta velocidad y baja latencia para un rendimiento superior.</p>
+                        <p class="price">\\$119.99</p>
+                        <a href="producto-detalle.html?id=memory001" class="btn-primary">Ver Detalles</a>
+                    </div>
+                    <div class="product-card" data-category="motherboard">
+                        <img src="images/motherboard.png" alt="Placa Base Z790">
+                        <h3>Placa Base ASUS ROG STRIX Z790-A GAMING WIFI</h3>
+                        <p class="description">Plataforma robusta con conectividad avanzada para Intel.</p>
+                        <p class="price">\\$399.99</p>
+                        <a href="producto-detalle.html?id=motherboard001" class="btn-primary">Ver Detalles</a>
+                    </div>
+                     <div class="product-card" data-category="psu">
+                        <img src="images/psu.png" alt="Fuente de Alimentación 1000W Gold">
+                        <h3>Fuente de Alimentación Corsair RM1000x (2021) 1000W 80+ Gold</h3>
+                        <p class="description">Potencia eficiente y fiable para sistemas de alto rendimiento.</p>
+                        <p class="price">\\$199.99</p>
+                        <a href="producto-detalle.html?id=psu001" class="btn-primary">Ver Detalles</a>
+                    </div>
+                    <!-- Añade más productos aquí siguiendo la misma estructura -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo TechFuture">
+                    <p>Tu socio en tecnología. Creamos el futuro, componente a componente.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><img src="icons/location.svg" alt="Ubicación"> Av. Principal 123, Ciudad Tech</p>
+                    <p><img src="icons/mail.svg" alt="Email"> info@techfuture.com</p>
+                    <p><img src="icons/phone.svg" alt="Teléfono"> +1 (123) 456-7890</p>
+                </div>
+                <div

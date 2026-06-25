@@ -1,3 +1,4 @@
+
 export function initRegistro() {
 
     console.log("🔥 initRegistro ejecutada");
