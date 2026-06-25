@@ -1,7 +1,5 @@
-import { mostrarOpcionesBusqueda, alternarOpcionesBusqueda, botonesEsquina } from "./funciones.js";
 console.log("ANTES");
 
-import { initCarrito } from "../carrito.js";
 import { initRegistro } from "../registro.js";
 import { initInicio } from "../inicio-sesion.js";
 import { initIndex } from "../index.js";
@@ -21,10 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
             initInicio();
             break;
 
-        case "carrito":
-            initCarrito();
-            break;
-    
         case "index":
             initIndex();
             break;
@@ -34,30 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
     }
 });
-
-mostrarOpcionesBusqueda();
-
-alternarOpcionesBusqueda(
-    "contenedor-categoria",
-    "contenedor2",
-    "contenedor-marca",
-    "btnCategorias"
-);
-
-alternarOpcionesBusqueda(
-    "contenedor2",
-    "contenedor-categoria",
-    "contenedor-marca",
-    "btnInicio"
-);
-
-alternarOpcionesBusqueda(
-    "contenedor-marca",
-    "contenedor-categoria",
-    "contenedor2",
-    "btnMarcas"
-);
-
-botonesEsquina();
-
-

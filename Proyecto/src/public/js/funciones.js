@@ -110,16 +110,13 @@ export function initMenu({
     });
 }
 
-//Para cambiar a las ventanas "carrito" o "usuario".
-export function botonesEsquina(){
-    const btnCarrito = document.getElementById("btnCarrito");
-    const btnUsuario = document.getElementById("btnUsuario");
+export function initNavegacion(idBoton, ruta) {
 
-    btnCarrito?.addEventListener("click", () => {
-        window.location.href = "/carrito";
-    });
+    const btn = document.getElementById(idBoton);
 
-    btnUsuario?.addEventListener("click", () => {
-        window.location.href = "/usuario";
+    if (!btn) return; // sale de la función si no existe
+
+    btn.addEventListener("click", () => {
+        window.location.href = ruta;
     });
 }

@@ -1,6 +1,31 @@
-import { initMenu, crearBotonesFiltro } from "../js/funciones.js";
+import { initMenu, crearBotonesFiltro, initNavegacion, mostrarOpcionesBusqueda, alternarOpcionesBusqueda } from "../js/funciones.js";
 
-//botonesEsquina();
+initNavegacion("btnCarrito", "/carrito");
+initNavegacion("btnUsuario", "/usuario");
+
+mostrarOpcionesBusqueda();
+
+alternarOpcionesBusqueda(
+    "contenedor-categoria",
+    "contenedor2",
+    "contenedor-marca",
+    "btnCategorias"
+);
+
+alternarOpcionesBusqueda(
+    "contenedor2",
+    "contenedor-categoria",
+    "contenedor-marca",
+    "btnInicio"
+);
+
+alternarOpcionesBusqueda(
+    "contenedor-marca",
+    "contenedor-categoria",
+    "contenedor2",
+    "btnMarcas"
+);
+
 
 function ponerNombre(productos) {
     const botones = document.querySelectorAll(".boton");
