@@ -3,30 +3,6 @@ import { initMenu, crearBotonesFiltro, initNavegacion, mostrarOpcionesBusqueda, 
 initNavegacion("btnCarrito", "/carrito");
 initNavegacion("btnUsuario", "/usuario");
 
-mostrarOpcionesBusqueda();
-
-alternarOpcionesBusqueda(
-    "contenedor-categoria",
-    "contenedor2",
-    "contenedor-marca",
-    "btnCategorias"
-);
-
-alternarOpcionesBusqueda(
-    "contenedor2",
-    "contenedor-categoria",
-    "contenedor-marca",
-    "btnInicio"
-);
-
-alternarOpcionesBusqueda(
-    "contenedor-marca",
-    "contenedor-categoria",
-    "contenedor2",
-    "btnMarcas"
-);
-
-
 function ponerNombre(productos) {
     const botones = document.querySelectorAll(".boton");
 
@@ -129,4 +105,28 @@ export async function initIndex(){
             });
         }
     });
-    }
+
+    mostrarOpcionesBusqueda();
+
+    alternarOpcionesBusqueda(
+        "contenedor-categoria",
+        "contenedor2",
+        "contenedor-marca",
+        "btnCategorias"
+    );
+
+    alternarOpcionesBusqueda(
+        "contenedor2",
+        "contenedor-categoria",
+        "contenedor-marca",
+        "btnInicio"
+    );
+
+    alternarOpcionesBusqueda(
+        "contenedor-marca",
+        "contenedor-categoria",
+        "contenedor2",
+        "btnMarcas"
+    );
+    
+}
