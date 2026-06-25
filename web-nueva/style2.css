@@ -1,25 +1,26 @@
 /* --- Estilos Generales (los que ya tenías) --- */
 
 :root {
-    --primary-blue: #004080; /* Azul profundo, dominante */
-    --secondary-blue: #4D7EA8; /* Azul más claro para acentos */
-    --accent-orange: #FFA500; /* Naranja como negativo, usar con moderación */
-    --background-light: #F8F9FA; /* Fondo claro */
-    --text-dark: #333;
-    --text-light: #FFF;
-    --border-color: #E0E0E0;
+    --primary-color: #343a40; /* Azul principal */
+    --secondary-color: #6c757d; /* Gris secundario */
+    --dark-color: #007bff; /* Negro oscuro */
+    --light-color: #f8f9fa; /* Blanco claro */
+    --accent-color: #28a745; /* Verde para acentos positivos */
+    --danger-color: #dc3545; /* Rojo para errores */
 
-    --font-primary: 'Montserrat', sans-serif; /* Fuente de marca, formal y moderna */
-    --font-secondary: 'Inter', sans-serif; /* Fuente simple sin serifa */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+
+    --container-max-width: 1200px;
+    --spacing-unit: 15px;
 }
 
-/* --- Reset y Estilos Generales --- */
+/* --- Reseteo y Estilos Generales --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
