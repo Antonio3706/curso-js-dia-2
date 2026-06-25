@@ -302,3 +302,27 @@ h1{
     font-size: 20px;
     cursor: pointer;
 }
+
+#btnAnadirCarrito{
+    border-radius: 12px;
+    background-color: var(--green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnAnadirCarrito button:active{
+    border-radius: 12px;
+    background-color: var(--green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnAnadirCarrito button:hover{
+    border-radius: 12px;
+    background-color: var(--light-green);
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
