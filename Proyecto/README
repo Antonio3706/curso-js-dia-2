@@ -1,0 +1,20 @@
+# Proyecto => Wood Trend
+
+Una página web para comprar muebles.
+
+## Tecnologías utilizadas
+
+- JavaScript
+- Node.js
+- Express
+- EJS
+- MariaDB
+
+## Características
+
+- Control de Registro e Inicio de Sesión de los usuarios
+- Mostrar catálogo de productos.
+- Visualizar descripciones de cada producto.
+- Conexión con base de datos MariaDB.
+- Interfaz desarrollada con EJS.
+

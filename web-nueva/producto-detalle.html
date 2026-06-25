@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture - Detalles del Producto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo TechFuture"> <!-- Reemplaza logo.png con tu logo -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#soporte" class="nav-link">Soporte</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <input type="text" placeholder="Buscar componentes...">
+                <a href="#" class="btn-primary">Buscar</a>
+                <a href="#" class="icon-link"><img src="icons/user.svg" alt="Mi Cuenta"></a> <!-- Reemplaza con tus iconos -->
+                <a href="#" class="icon-link"><img src="icons/cart.svg" alt="Carrito"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="product-detail">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a> &gt;
+                    <a href="productos.html">Productos</a> &gt;
+                    <span>Tarjeta Gráfica RTX 4090</span>
+                </div>
+
+                <div class="product-layout">
+                    <div class="product-images">
+                        <img src="images/gpu-large.png" alt="Tarjeta Gráfica RTX 4090 - Vista Principal" class="main-product-image">
+                        <!-- Puedes añadir más imágenes aquí para un carrusel -->
+                        <div class="thumbnail-gallery">
+                            <img src="images/gpu-thumb1.png" alt="Vista secundaria 1">
+                            <img src="images/gpu-thumb2.png" alt="Vista secundaria 2">
+                            <img src="images/gpu-thumb3.png" alt="Vista secundaria 3">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1>Tarjeta Gráfica RTX 4090</h1>
+                        <div class="product-rating">
+                            <!-- Ejemplo: Estrellas de calificación -->
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span>(125 reseñas)</span>
+                        </div>
+                        <p class="product-price">$1999.99</p>
+                        <p class="product-description">
+                            Experimenta un rendimiento sin precedentes con la NVIDIA GeForce RTX 4090. Equipada con la arquitectura Ada Lovelace, ofrece un salto cuántico en rendimiento y eficiencia energética. Ideal para gaming en 4K, creación de contenido y aplicaciones de IA.
+                        </p>
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                            </div>
+                            <a href="#" class="btn-primary add-to-cart">Añadir al Carrito</a>
+                        </div>
+                        <div class="product-meta">
+                            <p><strong>Categoría:</strong> <a href="productos.html?categoria=gpu">Tarjetas Gráficas</a></p>
+                            <p><strong>Disponibilidad:</strong> <span class="in-stock">En Stock</span></p>
+                            <p><strong>SKU:</strong> TF-GPU-4090</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="description">Descripción</button>
+                        <button class="tab-button" data-tab="specs">Especificaciones</button>
+                        <button class="tab-button" data-tab="reviews">Reseñas (125)</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="description" class="tab active">
+                            <h2>Descripción Detallada</h2>
+                            <p>La NVIDIA GeForce RTX 4090 representa la cúspide de la tecnología gráfica. Con 24 GB de memoria GDDR6X ultra rápida y la potencia de la nueva arquitectura Ada Lovelace, esta tarjeta redefine lo que es posible en videojuegos y productividad. Disfruta de Ray Tracing de nueva generación, DLSS 3 y una experiencia visual inmersiva como nunca antes.</p>
+                            <p>Perfecta para creadores de contenido que trabajan con video 8K, renderizado 3D complejo o desarrollo de IA, la RTX 4090 acelera flujos de trabajo y reduce tiempos de espera significativamente.</p>
+                        </div>
+                        <div id="specs" class="tab">
+                            <h2>Especificaciones Técnicas</h2>
+                            <table>
+                                <tr>
+                                    <th>Componente</th>
+                                    <th>Detalle</th>
+                                </tr>
+                                <tr>
+                                    <td>GPU</td>
+                                    <td>NVIDIA GeForce RTX 4090</td>
+                                </tr>
+                                <tr>
+                                    <td>Arquitectura</td>
+                                    <td>Ada Lovelace</td>
+                                </tr>
+                                <tr>
+                                    <td>Memoria VRAM</td>
+                                    <td>24 GB GDDR6X</td>
+                                </tr>
+                                <tr>
+                                    <td>Interfaz de Memoria</td>
+                                    <td>384-bit</td>
+                                </tr>
+                                <tr>
+                                    <td>Núcleos CUDA</td>
+                                    <td>16384</td>
+                                </tr>
+                                <tr>
+                                    <td>Núcleos RT</td>
+                                    <td>128</td>
+                                </tr>
+                                <tr>
+                                    <td>Núcleos Tensor</td>
+                                    <td>512</td>
+                                </tr>
+                                <tr>
+                                    <td>Velocidad de Boost</td>
+                                    <td>Hasta 2520 MHz</td>
+                                </tr>
+                                <tr>
+                                    <td>Consumo TDP</td>
+                                    <td>450W</td>
+                                </tr>
+                                <tr>
+                                    <td>Conectores de Alimentación</td>
+                                    <td>1x 16-pin (12VHPWR)</td>
+                                </tr>
+                                <tr>
+                                    <td>Salidas de Video</td>
+                                    <td>3x DisplayPort 1.4a, 1x HDMI 2.1</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="reviews" class="tab">
+                            <h2>Reseñas de Usuarios</h2>
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Juan Pérez</span>
+                                    <div class="review-rating">
+                                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span>
+                                    </div>
+                                </div>
+                                <p class="review-date">Publicado el 2024-06-20</p>
+                                <p class="review-text">¡Una bestia! El rendimiento en Cyberpunk 2077 con Ray Tracing al máximo es increíble. Vale cada euro invertido.</p>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Ana Gómez</span>
+                                    <div class="review-rating">
+                                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9733;</span>
+                                    </div>
+                                </div>
+                                <p class="review-date">Publicado el 2024-06-18</p>
+                                <p class="review-text">Muy potente, pero consume bastante. El renderizado de mis proyectos 3D ha mejorado mucho.</p>
+                            </div>
+                            <div class="add-review">
+                                <h3>Deja tu reseña</h3>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label for="reviewer-name">Tu Nombre:</label>
+                                        <input type="text" id="reviewer-name" name="reviewer-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="review-rating">Tu Calificación:</label>
+                                        <div class="rating-input">
+                                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="review-text">Tu Reseña:</label>
+                                        <textarea id="review-text" name="review-text" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-primary">Enviar Reseña</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="related-products" class="similar-products">
+                    <div class="container">
+                        <h2>Productos Relacionados</h2>
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <img src="images/cpu-related.png" alt="Procesador Intel Core i9">
+                                <h3>Procesador Intel Core i9</h3>
+                                <p class="price">$599.99</p>
+                                <a href="producto-detalle.html" class="btn-link">Ver Detalles</a>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/ssd-related.png" alt="SSD NVMe 2TB PCIe 4.0">
+                                <h3>SSD NVMe 2TB PCIe 4.0</h3>
+                                <p class="price">$149.99</p>
+                                <a href="producto-detalle.html" class="btn-link">Ver Detalles</a>
+                            </div>
+                            <div class="product-card">
+                                <img src="images/ram-related.png" alt="Memoria RAM DDR5 32GB">
+                                <h3>Memoria RAM DDR5 32GB (2x16GB)</h3>
+                                <p class="price">$129.99</p>
+                                <a href="producto-detalle.html" class="btn-link">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo TechFuture">
+                    <p>Tu socio en la tecnología del futuro.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#soporte">Soporte</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contáctanos</h4>
+                    <p>Calle de la Tecnología, 123, Ciudad Digital, 01010</p>
+                    <p>+1 (123) 456-7890</p>
+                    <p>info@techfuture.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe las últimas noticias y ofertas.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn-primary-small">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechFuture. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+    <script>
+        // Scripts específicos para la página de producto
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lógica para el carrusel de miniaturas (si se implementa)
+            const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
+            const mainImage = document.querySelector('.main-product-image');
+
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    mainImage.src = thumb.src.replace('-thumb', '-large'); // Asumiendo un patrón de nombres
+                    mainImage.alt = thumb.alt;
+                });
+            });
+
+            // Lógica para las pestañas
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content .tab');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover 'active' de todos los botones y contenidos
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    // Añadir 'active' al botón clickeado y su contenido correspondiente
+                    button.classList.add('active');
+                    document.getElementById(button.getAttribute('data-tab')).classList.add('active');
+                });
+            });
+
+            // Lógica simple para la calificación de estrellas en el formulario de reseña
+            const ratingInputs = document.querySelectorAll('.rating-input input[type="radio"]');
+            ratingInputs.forEach(input => {
+                input.addEventListener('change', () => {
+                    // Podrías querer resaltar visualmente la selección, pero el comportamiento básico está cubierto por el radio button
+                });
+            });
+        });
+    </script>
+</body>
+</html>
